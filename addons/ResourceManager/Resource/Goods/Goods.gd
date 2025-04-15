@@ -20,7 +20,7 @@ enum Classification {
 @export var classification: Classification = Classification.CONSUMABLE
 
 ## Nesnenin oyundaki değeri/fiyatı
-## oyunun para birimi; exo
+## oyun içi para birimi; exo
 @export var price: int = 200
 
 ## Nesneye oyun içinde denk gelme oranı

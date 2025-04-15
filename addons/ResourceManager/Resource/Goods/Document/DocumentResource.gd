@@ -1,6 +1,6 @@
 ##
 ## DocumentResource
-## Oyun yer alan tüm kitaplar, dergiler, belgeler,
+## Oyunda yer alan tüm kitaplar, dergiler, belgeler,
 ## günlükler, sistem kayıtları vb. için ortak veri girdileri
 ## 
 class_name DocumentResource
@@ -14,13 +14,13 @@ enum DocType {
 	## Bilimsel ya da istihbarat raporları
 	REPORT, 
 	
-	## Oyun içi karakterlerin kişisel hikayeleri/günlükleri
+	## NPC karakterlerin kişisel hikayeleri/günlükleri
 	DIARY,
 	
 	## Bir gemiye, istasyona veya cihaza ait sistem kayıtları
 	LOGBOOK,
 	
-	## Okunduğunda karakterin xp seviyesini etkileyecek olan 
+	## Okunduğunda karakterin beceri puanlarını (skill points) etkileyecek olan 
 	## farklı beceri alanlarına ait eğitici dergiler
 	MAGAZINE
 }

@@ -7,7 +7,7 @@ class_name CharacterResource
 extends Resource
 
 ## Bazı meslekler/uzmanlıklar sadece NPC'lere özgüdür.
-## Oyuncu, oyun başlangıcında farklı özellik ve 
+## Oyuncu, oyun başlangıcında farklı özelliklere ve 
 ## uzmanlıklara sahip ön tanımlı 12 karakterden
 ## (6 Kadın / 6 Erkek) birini seçerek oyuna başlar.
 enum Occupation {
@@ -78,11 +78,11 @@ enum Gender {
 @export var level: int = 1
 
 ## player/npc'nin varsayılan taşıma kapasitesi (grid)
-## npc'ler için sadece ticaret için kullanılacak
+## npc'ler sadece ticaret amaçlı kullanacak
 @export var inventory_size: int = 24
 
 ## player/npc'nin oyundaki başlangıç parası
-## oyunun para birimi; exo
+## oyun içi para birimi; exo
 @export var money: int = 0
 
 ## Karakterin biyografisi

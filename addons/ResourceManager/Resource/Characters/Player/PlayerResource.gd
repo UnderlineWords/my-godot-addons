@@ -15,9 +15,9 @@ extends CharacterResource
 @export var dehydration: float = 1.0
 
 @export_group("Settings")
-## Oyuncunun aşağıdaki "perks" listesinden
-## seçebileceği maksimum özellik sayısı
-@export var max_selectable_skills: int = 2
+## Oyun başlangıcında, oyuncunun aşağıdaki "perks"
+## listesinden seçebileceği maksimum özellik sayısı
+@export var max_selectable_perks: int = 2
 
 ## Oyuncu, aşağıdaki ekstra özellikleri sadece oyun
 ## başlangıcında seçebilir ve daha sonra değiştiremez
@@ -58,6 +58,10 @@ extends CharacterResource
 ## Etkilediği değer; CharacterResource.speed
 @export var runner: bool = false
 
+## Smokin Man
+## Oyuncunun tüccarlardan aldığı ürünler 25% daha ucuz olur 
+@export var smokin_man: bool = false
+
 ## Solid Wall
 ## Oyuncunun dayanıklılık değeri 25% artar
 ## Etkilediği değer; CharacterResource.stamina
@@ -68,8 +72,44 @@ extends CharacterResource
 ## CharacterResource dosyasında kayıtlıdır.
 ## TODO: Liste tamamlanacak ve sayısı çoğaltılacak
 @export_group("Skills")
-## Oyuncunun NPC'lerce farkedilme range çarpanı
-@export var stealth: float = 1.0
+## Barter
+## Tüccarlardan daha iyi fiyat alma çarpanı
+@export var barter: float = 0.0
 
-## Oyuncunun kilitleri açma şansı çarpanı
-@export var lockpicking: float = 1.0
+## Crafting
+## Oyuncunun üretim hızı ve verimlilik çarpanı
+@export var crafting: float = 0.0
+
+## Engineering
+## Gemi/araç/cihaz tamiri ve modifikasyon hızı/başarısı
+@export var engineering: float = 0.0
+
+## Environmental Resistance 
+## Oyuncunun radyasyon, oksijen tüketimi ve aşırı sıcaklıklar
+## gibi farklı atmosferlere özgü çevresel tehlikelere karşı genel direnci
+## (oxygen_efficiency + radiation_resistance + temperature_resistance)
+@export var environmental_resistance: float = 0.0
+
+## Hacking
+## Oyuncunun dijital sistemleri kırma şansı çarpanı
+@export var hacking: float = 0.0
+
+## Lockpicking
+## Oyuncunun fiziksel kilitleri açma şansı çarpanı
+@export var lockpicking: float = 0.0
+
+## Melee
+## Yakın dövüşte isabet ve hasar çarpanı
+@export var melee: float = 0.0
+
+## Mining
+## Maden toplama hızı ve verimliliği çarpanı
+@export var mining: float = 0.0
+
+## Scavenging
+## Loot kalitesi ve bulunabilirliği çarpanı
+@export var scavenging: float = 0.0
+
+## Stealth
+## Oyuncunun Düşman/NPC'lerce fark edilme mesafesi çarpanı
+@export var stealth: float = 0.0
