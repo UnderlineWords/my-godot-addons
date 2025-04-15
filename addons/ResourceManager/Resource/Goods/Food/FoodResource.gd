@@ -20,6 +20,18 @@ enum Category {
 ## adı
 @export var name : String = "..."
 
+## tüketildiğinde açlığa etkisi
+@export var hunger_restore: float = 0.0
+
+## tüketildiğinde susuzluğa etkisi
+@export var thirst_restore: float = 0.0
+
+## tüketildiğinde genel sağlığa etkisi
+@export var health_restore: float = 0.0
+
+## bozulma süresi/oranı
+@export var spoil_rate: float = 0.0
+
 ## açıklama
 @export_multiline var description: String = "..."
 

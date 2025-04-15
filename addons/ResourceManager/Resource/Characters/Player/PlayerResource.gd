@@ -44,7 +44,7 @@ extends CharacterResource
 @export var fast_healer: bool = false
 
 ## Fast Learner
-## Karakter, 25% daha fazla deneyim puanı kazanır
+## Oyuncu, 25% daha fazla deneyim puanı kazanır
 ## Etkilediği değer; CharacterResource.level
 @export var fast_learner: bool = false
 
@@ -58,9 +58,9 @@ extends CharacterResource
 ## Etkilediği değer; CharacterResource.speed
 @export var runner: bool = false
 
-## Smokin Man
+## Charismatic
 ## Oyuncunun tüccarlardan aldığı ürünler 25% daha ucuz olur 
-@export var smokin_man: bool = false
+@export var charismatic: bool = false
 
 ## Solid Wall
 ## Oyuncunun dayanıklılık değeri 25% artar

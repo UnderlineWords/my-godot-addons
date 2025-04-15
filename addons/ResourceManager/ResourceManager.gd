@@ -1,7 +1,8 @@
 ## 
 ## TODO: kaydetme ve yükleme işlemleri tamamlanacak
 ## 
-class_name ResourceManager extends Resource
+class_name ResourceManager
+extends Resource
 
 ## 
 ## Oyuncuya ait bilgileri kaydetme işlemi
