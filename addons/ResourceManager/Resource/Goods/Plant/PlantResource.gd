@@ -6,7 +6,7 @@
 class_name PlantResource
 extends Goods
 
-## bitkilerin yetiştiği atmosfer türü
+## bitkinin yetiştiği atmosfer türü
 enum Atmosphere { 
 	## Düşük nem ve büyük sıcaklık farklarına sahip ince tabakalı atmosfer türü. 
 	## Örneğin; Mars benzeri kuru gezegenler.
@@ -49,7 +49,7 @@ enum Atmosphere {
 	WETLAND
 }
 
-enum PlantType {
+enum Type {
 	HERB, 
 	VEGETABLE,
 	FRUIT
@@ -62,7 +62,7 @@ enum PlantType {
 @export_multiline var description: String = "..."
 
 ## bitkinin türü
-@export var plant_type: PlantType = PlantType.HERB
+@export var plant_type: Type = Type.HERB
 
 ## bitkinin yetiştiği atmosfer türü
 @export var atmosphere_type: Atmosphere = Atmosphere.ARID

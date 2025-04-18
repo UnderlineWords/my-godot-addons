@@ -49,7 +49,7 @@ extends CharacterResource
 @export var fast_learner: bool = false
 
 ## Heavy Carrying
-## Oyuncunun taşıma kapasitesi +5 (grid) artar
+## Oyuncunun taşıma kapasitesi +6 (grid) artar
 ## Etkilediği değer; CharacterResource.inventory_size
 @export var heavy_carrying: bool = false
 

@@ -20,8 +20,8 @@ enum DocType {
 	## Bir gemiye, istasyona veya cihaza ait sistem kayıtları
 	LOGBOOK,
 	
-	## Okunduğunda karakterin beceri puanlarını (skill points) etkileyecek olan 
-	## farklı beceri alanlarına ait eğitici dergiler
+	## Oyuncunun beceri puanlarını (skill points) etkileyecek olan 
+	## çeşitli uzmanlıklarla ilgili eğitici dergiler
 	MAGAZINE
 }
 

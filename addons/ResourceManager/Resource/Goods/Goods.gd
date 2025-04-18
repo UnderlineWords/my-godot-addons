@@ -8,12 +8,14 @@ class_name Goods
 extends ResourceManager
 
 enum Classification { 
-	CONSUMABLE,
-	WEAPON,
+	AMMO,
 	ARMOR,
+	COMPONENT,
+	CONSUMABLE,
 	DOCUMENT,
+	MISC,
 	TOOL,
-	MISC
+	WEAPON
 }
 
 ## nesnenin ait olduğu sınıf
@@ -35,6 +37,9 @@ enum Classification {
 ## Oyun içinde nesne ortaya çıkabilir mi?
 ## false ise sadece tüccarlarda bulunabilir.
 @export var spawnable: bool = true
+
+## Nesne geliştirilebilir mi?
+@export var upgradable: bool = false
 
 ## Nesne istiflenebilir mi?
 @export var stackable: bool = true
