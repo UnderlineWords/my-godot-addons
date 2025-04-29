@@ -1,0 +1,452 @@
+[
+	{
+		"id"         : "antimony",
+		"name"       : "Antimony",
+		"rarity"     : "uncommon",
+		"color"      : "#9fa9b8",
+		"description": "A brittle metalloid used in alloys and flame retardants.",
+		"atmosphere" : ["dense", "toxic"],
+		"locations"  : ["planet", "asteroid"],
+		"value"      : 65
+	},
+	{
+		"id"         : "bauxite",
+		"name"       : "Bauxite",
+		"rarity"     : "common",
+		"color"      : "#c16635",
+		"description": "An aluminum-rich ore used in lightweight alloys and construction materials.",
+		"atmosphere" : ["wetland", "arid"],
+		"locations"  : ["planet"],
+		"value"      : 30
+	},
+	{
+		"id"         : "beryllium",
+		"name"       : "Beryllium",
+		"rarity"     : "rare",
+		"color"      : "#d2f8ff",
+		"description": "A lightweight metal used in spacecraft components due to its stiffness and thermal stability.",
+		"atmosphere" : ["radiated", "thin"],
+		"locations"  : ["asteroid", "planet"],
+		"value"      : 210
+	},
+	{
+		"id"         : "bismuth",
+		"name"       : "Bismuth",
+		"rarity"     : "uncommon",
+		"color"      : "#caa6ff",
+		"description": "A brittle metal known for its iridescent crystals and use in electronics.",
+		"atmosphere" : ["dense", "wetland"],
+		"locations"  : ["planet"],
+		"value"      : 75
+	},
+	{
+		"id"         : "cadmium",
+		"name"       : "Cadmium",
+		"rarity"     : "rare",
+		"color"      : "#e0dede",
+		"description": "A soft metal used in batteries and control rods for nuclear systems.",
+		"atmosphere" : ["toxic", "radiated"],
+		"locations"  : ["asteroid", "planet"],
+		"value"      : 185
+	},
+	{
+		"id"         : "cesium",
+		"name"       : "Cesium",
+		"rarity"     : "rare",
+		"color"      : "#f4e38c",
+		"description": "A soft, golden alkali metal highly reactive with water and used in advanced electronics.",
+		"atmosphere" : ["arid", "thin"],
+		"locations"  : ["planet", "asteroid"],
+		"value"      : 220
+	},
+	{
+		"id"         : "chromium",
+		"name"       : "Chromium",
+		"rarity"     : "uncommon",
+		"color"      : "#a8a9ad",
+		"description": "A corrosion-resistant metal used for plating and in high-strength alloys.",
+		"atmosphere" : ["volcanic", "dense"],
+		"locations"  : ["planet"],
+		"value"      : 60
+	},
+	{
+		"id"         : "cobalt",
+		"name"       : "Cobalt",
+		"rarity"     : "uncommon",
+		"color"      : "#3d59ab",
+		"description": "A magnetic metal used in batteries, alloys, and radiation-resistant equipment.",
+		"atmosphere" : ["toxic", "radiated"],
+		"locations"  : ["planet", "asteroid"],
+		"value"      : 90
+	},
+	{
+		"id"         : "copper",
+		"name"       : "Copper",
+		"rarity"     : "common",
+		"color"      : "#b87333",
+		"description": "A conductive metal essential for wiring and electronics.",
+		"atmosphere" : ["wetland", "arid"],
+		"locations"  : ["planet"],
+		"value"      : 35
+	},
+	{
+		"id"         : "dysprosium",
+		"name"       : "Dysprosium",
+		"rarity"     : "rare",
+		"color"      : "#7e9eb2",
+		"description": "A rare earth element used in advanced magnets and nuclear reactors.",
+		"atmosphere" : ["radiated", "dense"],
+		"locations"  : ["asteroid", "moon"],
+		"value"      : 240
+	},
+	{
+		"id"         : "europium",
+		"name"       : "Europium",
+		"rarity"     : "very_rare",
+		"color"      : "#c8d6fc",
+		"description": "A highly reactive rare earth metal used in phosphors and advanced sensors.",
+		"atmosphere" : ["radiated", "frozen"],
+		"locations"  : ["asteroid"],
+		"value"      : 300
+	},
+	{
+		"id"         : "gallium",
+		"name"       : "Gallium",
+		"rarity"     : "rare",
+		"color"      : "#d6e3ff",
+		"description": "A metal that melts in your hand, used in semiconductors and solar panels.",
+		"atmosphere" : ["dense", "wetland"],
+		"locations"  : ["planet", "moon"],
+		"value"      : 175
+	},
+	{
+		"id"         : "graphite",
+		"name"       : "Graphite",
+		"rarity"     : "common",
+		"color"      : "#4b4b4b",
+		"description": "A soft form of carbon used in batteries, lubricants, and high-temperature applications.",
+		"atmosphere" : ["arid", "thin"],
+		"locations"  : ["planet", "asteroid"],
+		"value"      : 28
+	},
+	{
+		"id"         : "hafnium",
+		"name"       : "Hafnium",
+		"rarity"     : "rare",
+		"color"      : "#d2d4dc",
+		"description": "A ductile metal with high neutron absorption, ideal for control rods and superalloys.",
+		"atmosphere" : ["dense", "volcanic"],
+		"locations"  : ["moon", "asteroid"],
+		"value"      : 210
+	},
+	{
+		"id"         : "holmium",
+		"name"       : "Holmium",
+		"rarity"     : "very_rare",
+		"color"      : "#a9c3ff",
+		"description": "A magnetic rare earth metal used in high-strength magnets and lasers.",
+		"atmosphere" : ["radiated", "toxic"],
+		"locations"  : ["asteroid"],
+		"value"      : 270
+	},
+	{
+		"id"         : "iridium",
+		"name"       : "Iridium",
+		"rarity"     : "very_rare",
+		"color"      : "#e0e0e0",
+		"description": "One of the densest and most corrosion-resistant metals, used in spacecraft and high-precision tech.",
+		"atmosphere" : ["volcanic", "frozen"],
+		"locations"  : ["moon", "asteroid"],
+		"value"      : 320
+	},
+	{
+		"id"         : "iron",
+		"name"       : "Iron",
+		"rarity"     : "common",
+		"color"      : "#b7410e",
+		"description": "A strong and widely used metal essential for construction and crafting.",
+		"atmosphere" : ["arid", "dense", "wetland"],
+		"locations"  : ["planet", "moon", "asteroid"],
+		"value"      : 25
+	},
+	{
+		"id"         : "lead",
+		"name"       : "Lead",
+		"rarity"     : "uncommon",
+		"color"      : "#575757",
+		"description": "A heavy, toxic metal used in shielding, batteries, and structural alloys.",
+		"atmosphere" : ["toxic", "dense"],
+		"locations"  : ["planet", "asteroid"],
+		"value"      : 60
+	},
+	{
+		"id"         : "lithium",
+		"name"       : "Lithium",
+		"rarity"     : "uncommon",
+		"color"      : "#cdd8d9",
+		"description": "A lightweight reactive metal used in energy storage and advanced batteries.",
+		"atmosphere" : ["thin", "wetland"],
+		"locations"  : ["moon", "planet"],
+		"value"      : 75
+	},
+	{
+		"id"         : "magnesium",
+		"name"       : "Magnesium",
+		"rarity"     : "common",
+		"color"      : "#e0e0e0",
+		"description": "A light, versatile metal used in alloys, propulsion, and flare systems.",
+		"atmosphere" : ["arid", "volcanic"],
+		"locations"  : ["planet", "asteroid"],
+		"value"      : 40
+	},
+	{
+		"id"         : "manganese",
+		"name"       : "Manganese",
+		"rarity"     : "common",
+		"color"      : "#a0522d",
+		"description": "A brittle metal often used to strengthen steel and improve durability.",
+		"atmosphere" : ["arid", "dense"],
+		"locations"  : ["planet", "asteroid"],
+		"value"      : 30
+	},
+	{
+		"id"         : "molybdenum",
+		"name"       : "Molybdenum",
+		"rarity"     : "uncommon",
+		"color"      : "#7f8c8d",
+		"description": "A strong, corrosion-resistant metal essential in high-performance alloys.",
+		"atmosphere" : ["volcanic", "radiated"],
+		"locations"  : ["planet", "moon"],
+		"value"      : 65
+	},
+	{
+		"id"         : "neodymium",
+		"name"       : "Neodymium",
+		"rarity"     : "rare",
+		"color"      : "#be93e4",
+		"description": "A rare earth element vital for crafting powerful magnets and energy devices.",
+		"atmosphere" : ["dense", "toxic"],
+		"locations"  : ["asteroid", "moon"],
+		"value"      : 90
+	},
+	{
+		"id"         : "nickel",
+		"name"       : "Nickel",
+		"rarity"     : "common",
+		"color"      : "#9fa9a3",
+		"description": "A versatile metal used in alloys, batteries, and corrosion-resistant parts.",
+		"atmosphere" : ["wetland", "dense"],
+		"locations"  : ["planet", "asteroid"],
+		"value"      : 35
+	},
+	{
+		"id"         : "niobium",
+		"name"       : "Niobium",
+		"rarity"     : "uncommon",
+		"color"      : "#b0c4de",
+		"description": "A soft, ductile metal used to enhance strength in alloys and superconducting materials.",
+		"atmosphere" : ["thin", "dense"],
+		"locations"  : ["planet", "moon"],
+		"value"      : 70
+	},
+	{
+		"id"         : "osmium",
+		"name"       : "Osmium",
+		"rarity"     : "rare",
+		"color"      : "#4682b4",
+		"description": "A dense and bluish-white metal, extremely hard and resistant to corrosion.",
+		"atmosphere" : ["radiated", "toxic"],
+		"locations"  : ["asteroid"],
+		"value"      : 95
+	},
+	{
+		"id"         : "platinum",
+		"name"       : "Platinum",
+		"rarity"     : "rare",
+		"color"      : "#e5e4e2",
+		"description": "A highly valuable metal prized for its resistance to wear and its catalytic properties.",
+		"atmosphere" : ["wetland", "dense"],
+		"locations"  : ["planet", "asteroid"],
+		"value"      : 100
+	},
+	{
+		"id"         : "rareearth",
+		"name"       : "Rare Earth",
+		"rarity"     : "very_rare",
+		"color"      : "#9370db",
+		"description": "A category of scarce elements essential in high-tech applications and advanced manufacturing.",
+		"atmosphere" : ["dense", "volcanic"],
+		"locations"  : ["moon", "asteroid"],
+		"value"      : 120
+	},
+	{
+		"id"         : "rhodium",
+		"name"       : "Rhodium",
+		"rarity"     : "very_rare",
+		"color"      : "#dcdcdc",
+		"description": "A rare and silvery-white metal known for its reflective surface and resistance to corrosion.",
+		"atmosphere" : ["thin", "radiated"],
+		"locations"  : ["asteroid", "planet"],
+		"value"      : 115
+	},
+	{
+		"id"         : "ruthenium",
+		"name"       : "Ruthenium",
+		"rarity"     : "rare",
+		"color"      : "#aaa9ad",
+		"description": "A brittle metal used in electronics and alloy production, valued for its hardness.",
+		"atmosphere" : ["toxic", "dense"],
+		"locations"  : ["moon"],
+		"value"      : 85
+	},
+	{
+		"id"         : "samarium",
+		"name"       : "Samarium",
+		"rarity"     : "uncommon",
+		"color"      : "#8a7f8d",
+		"description": "A lanthanide metal used in magnets and reactors, with moderate availability.",
+		"atmosphere" : ["frozen", "wetland"],
+		"locations"  : ["planet", "moon"],
+		"value"      : 60
+	},
+	{
+		"id"         : "scandium",
+		"name"       : "Scandium",
+		"rarity"     : "uncommon",
+		"color"      : "#c0c0c0",
+		"description": "A lightweight metal often used in aerospace components and high-performance materials.",
+		"atmosphere" : ["arid", "thin"],
+		"locations"  : ["planet"],
+		"value"      : 55
+	},
+	{
+		"id"         : "selenium",
+		"name"       : "Selenium",
+		"rarity"     : "rare",
+		"color"      : "#d1cfcf",
+		"description": "A non-metal used in electronics and solar cells, highly reactive with oxygen.",
+		"atmosphere" : ["toxic", "thin"],
+		"locations"  : ["planet", "moon"],
+		"value"      : 75
+	},
+	{
+		"id"         : "silicon",
+		"name"       : "Silicon",
+		"rarity"     : "common",
+		"color"      : "#d8d8d8",
+		"description": "A widely available and essential material in electronics, known for its semiconductor properties.",
+		"atmosphere" : ["arid", "dense"],
+		"locations"  : ["planet", "asteroid"],
+		"value"      : 40
+	},
+	{
+		"id"         : "tantalum",
+		"name"       : "Tantalum",
+		"rarity"     : "rare",
+		"color"      : "#b1a6b1",
+		"description": "A dense metal resistant to corrosion, often used in electronics and capacitors.",
+		"atmosphere" : ["frozen", "radiated"],
+		"locations"  : ["planet", "moon"],
+		"value"      : 90
+	},
+	{
+		"id"         : "tellurium",
+		"name"       : "Tellurium",
+		"rarity"     : "uncommon",
+		"color"      : "#d8a7d2",
+		"description": "A metalloid used in thermoelectrics and solar panels, known for its semiconductor properties.",
+		"atmosphere" : ["dense", "toxic"],
+		"locations"  : ["planet", "moon"],
+		"value"      : 65
+	},
+	{
+		"id"         : "terbium",
+		"name"       : "Terbium",
+		"rarity"     : "rare",
+		"color"      : "#4c7c58",
+		"description": "A rare earth metal used in the manufacturing of high-performance magnets and phosphors.",
+		"atmosphere" : ["radiated", "thin"],
+		"locations"  : ["planet", "asteroid"],
+		"value"      : 110
+	},
+	{
+		"id"         : "thorium",
+		"name"       : "Thorium",
+		"rarity"     : "rare",
+		"color"      : "#a6a6b2",
+		"description": "A radioactive metal, primarily used as a nuclear fuel in reactors.",
+		"atmosphere" : ["toxic", "radiated"],
+		"locations"  : ["planet", "moon"],
+		"value"      : 125
+	},
+	{
+		"id"         : "titanium",
+		"name"       : "Titanium",
+		"rarity"     : "common",
+		"color"      : "#b5b8b1",
+		"description": "A strong and lightweight metal, widely used in aerospace and military applications.",
+		"atmosphere" : ["arid", "dense"],
+		"locations"  : ["planet", "asteroid"],
+		"value"      : 50
+	},
+	{
+		"id"         : "tungsten",
+		"name"       : "Tungsten",
+		"rarity"     : "rare",
+		"color"      : "#757575",
+		"description": "A very dense metal, primarily used in the manufacturing of high-temperature and heavy-duty equipment.",
+		"atmosphere" : ["volcanic", "arid"],
+		"locations"  : ["planet", "moon"],
+		"value"      : 150
+	},
+	{
+		"id"         : "uranium",
+		"name"       : "Uranium",
+		"rarity"     : "rare",
+		"color"      : "#3e6f3f",
+		"description": "A highly radioactive element used in nuclear fuel and weaponry.",
+		"atmosphere" : ["radiated", "toxic"],
+		"locations"  : ["planet", "moon"],
+		"value"      : 200
+	},
+	{
+		"id"         : "vanadium",
+		"name"       : "Vanadium",
+		"rarity"     : "uncommon",
+		"color"      : "#4b7f52",
+		"description": "A strong metal used to strengthen steel and in energy storage systems.",
+		"atmosphere" : ["dense", "arid"],
+		"locations"  : ["planet", "asteroid"],
+		"value"      : 75
+	},
+	{
+		"id"         : "yttrium",
+		"name"       : "Yttrium",
+		"rarity"     : "rare",
+		"color"      : "#f0a3c3",
+		"description": "A rare earth element, important for superconducting materials and phosphors.",
+		"atmosphere" : ["toxic", "thin"],
+		"locations"  : ["planet", "moon"],
+		"value"      : 135
+	},
+	{
+		"id"         : "zinc",
+		"name"       : "Zinc",
+		"rarity"     : "common",
+		"color"      : "#a8a888",
+		"description": "A metal widely used in batteries and to galvanize steel to prevent rusting.",
+		"atmosphere" : ["wetland", "arid"],
+		"locations"  : ["planet", "asteroid"],
+		"value"      : 30
+	},
+	{
+		"id"         : "zirconium",
+		"name"       : "Zirconium",
+		"rarity"     : "uncommon",
+		"color"      : "#b7b7a0",
+		"description": "A metal known for its resistance to corrosion, used in nuclear reactors and high-performance equipment.",
+		"atmosphere" : ["volcanic", "dense"],
+		"locations"  : ["planet", "moon"],
+		"value"      : 90
+	}
+]

@@ -18,38 +18,51 @@ enum Classification {
 	WEAPON
 }
 
+## CLASSIFICATION
 ## nesnenin ait olduğu sınıf
 @export var classification: Classification = Classification.CONSUMABLE
 
+## PRICE
 ## Nesnenin oyundaki değeri/fiyatı
 ## oyun içi para birimi; exo
 @export var price: int = 200
 
+## RARITY
 ## Nesneye oyun içinde denk gelme oranı
+## "spawnable" false ise "rarity" yalnızca
+## nesnenin tüccarlarda bulunabilme şansını etkiler
 @export var rarity: float = 1.0
 
+## IS BUYABLE?
 ## Nesne satın alınabilir mi?
 @export var buyable: bool = true
 
+## IS SELLABLE?
 ## Nesne satılabilir mi?
 @export var sellable: bool = true
 
+## IS SPAWNABLE?
 ## Oyun içinde nesne ortaya çıkabilir mi?
 ## false ise sadece tüccarlarda bulunabilir.
 @export var spawnable: bool = true
 
+## IS UPGRADABLE?
 ## Nesne geliştirilebilir mi?
 @export var upgradable: bool = false
 
+## IS STACKABLE?
 ## Nesne istiflenebilir mi?
 @export var stackable: bool = true
 
+## MAXIMUM STACK SIZE
 ## Nesnenin maksimum istiflenme sayısı
 @export var max_stack: int = 5
 
 @export_category("Textures")
+## IMAGE
 ## Nesneye ait görsel dosyası
 @export var image: Texture2D
 
+## ICON
 ## Nesneyi tanımlayan ikon dosyası
 @export var icon: Texture2D
