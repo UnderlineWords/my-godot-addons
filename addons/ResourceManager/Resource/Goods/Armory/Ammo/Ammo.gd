@@ -1,7 +1,7 @@
 ## 
-## AmmoResource
+## Ammo
 ## 
-class_name AmmoResource
+class_name Ammo
 extends Goods
 
 enum AmmoType {

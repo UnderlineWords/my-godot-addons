@@ -1,9 +1,9 @@
 ## 
-## PlayerResource
+## Player
 ## Sadece "player"a özgü veri girdileri
 ## 
-class_name PlayerResource
-extends CharacterResource
+class_name Player
+extends Character
 
 @export_group("General")
 ## STARVATION

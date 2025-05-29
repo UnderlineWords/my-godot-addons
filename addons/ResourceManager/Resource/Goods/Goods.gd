@@ -43,12 +43,17 @@ enum Classification {
 
 ## IS SPAWNABLE?
 ## Oyun içinde nesne ortaya çıkabilir mi?
-## false ise sadece tüccarlarda bulunabilir.
+## false ise nesne ya tüccarlarda bulunabilir ya da
+## üretilebilir bir nesnedir
 @export var spawnable: bool = true
 
 ## IS UPGRADABLE?
 ## Nesne geliştirilebilir mi?
 @export var upgradable: bool = false
+
+## IS CRAFTABLE?
+## Nesne üretilebilir mi?
+@export var craftable: bool = false
 
 ## IS STACKABLE?
 ## Nesne istiflenebilir mi?

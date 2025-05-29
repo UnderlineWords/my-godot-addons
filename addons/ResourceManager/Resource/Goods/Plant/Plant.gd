@@ -1,9 +1,9 @@
 ## 
-## PlantResource
+## Plant
 ## Oyunda yer alan şifalı bitkiler, sebzeler 
 ## ve meyveler için ortak veri girdileri
 ## 
-class_name PlantResource
+class_name Plant
 extends Goods
 
 enum Type {

@@ -1,7 +1,7 @@
 ## 
-## WeaponResource
+## Weapon
 ## 
-class_name WeaponResource
+class_name Weapon
 extends Goods
 
 enum WeaponType {
@@ -43,7 +43,7 @@ enum Usage {
 
 ## AMMO
 ## Kullandığı mermi
-@export var ammo: AmmoResource.AmmoType
+@export var ammo: Ammo.AmmoType
 
 ## MAGAZINE SIZE
 ## şarjör kapasitesi

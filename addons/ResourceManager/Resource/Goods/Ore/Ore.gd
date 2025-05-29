@@ -1,9 +1,9 @@
 ## 
-## FoodResource
+## Ore
 ## Oyunda yer alan tüm maden
 ## kaynakları için ortak veri girdileri
 ## 
-class_name OreResource
+class_name Ore
 extends Goods
 
 ## maden listesi

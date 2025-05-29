@@ -1,7 +1,7 @@
 ## 
-## PlanetResource
+## Planet
 ## 
-class_name PlanetResource
+class_name Planet
 extends CelestialBody
 
 ## MOONS

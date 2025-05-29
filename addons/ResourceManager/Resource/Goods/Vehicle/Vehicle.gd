@@ -1,7 +1,7 @@
 ## 
-## VehicleResource
+## Vehicle
 ## 
-class_name VehicleResource
+class_name Vehicle
 extends Goods
 
 enum Type {

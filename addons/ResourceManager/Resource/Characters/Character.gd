@@ -3,8 +3,8 @@
 ## Tüm NPC & Player için ortak veri
 ## girdilerinin bulunduğu "üst ana" sınıf
 ##
-class_name CharacterResource
-extends Resource
+class_name Character
+extends ResourceManager
 
 ## Bazı meslekler/uzmanlıklar sadece NPC'lere özgüdür.
 ## Oyuncu, oyun başlangıcında farklı özelliklere ve 

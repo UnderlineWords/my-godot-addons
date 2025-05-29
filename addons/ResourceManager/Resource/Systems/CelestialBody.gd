@@ -9,8 +9,8 @@ extends ResourceManager
 @export var name: String
 
 ## RESOURCES
-## gezegen/uydu/asteroit'in sahip olduğu madenler
-@export var resources: Array[OreResource.List] = []
+## gezegen/uydu/asteroit yüzeyindeki madenler
+@export var resources: Array[Ore.List] = []
 
 ## WATER PRESENCE
 ## gezegen/uydu/asteroit yüzeyinde su var mı?
