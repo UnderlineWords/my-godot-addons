@@ -3,8 +3,7 @@
 ## Oyunda yer alan tüm maden
 ## kaynakları için ortak veri girdileri
 ## 
-class_name Ore
-extends Goods
+class_name Ore extends Goods
 
 ## maden listesi
 ## maden detayları json dosyasından alınır

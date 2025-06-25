@@ -1,8 +1,7 @@
 ## 
 ## Weapon
 ## 
-class_name Weapon
-extends Goods
+class_name Weapon extends Goods
 
 enum WeaponType {
 	AssaultRifle,

@@ -1,5 +1,4 @@
 ## 
 ## SpaceLocation
 ## 
-class_name SpaceLocation
-extends Location
+class_name SpaceLocation extends Location

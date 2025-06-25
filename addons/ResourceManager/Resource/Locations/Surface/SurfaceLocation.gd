@@ -1,5 +1,4 @@
 ## 
 ## SurfaceLocation
 ## 
-class_name SurfaceLocation
-extends Location
+class_name SurfaceLocation extends Location

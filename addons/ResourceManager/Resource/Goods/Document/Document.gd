@@ -3,8 +3,7 @@
 ## Oyunda yer alan tüm kitaplar, dergiler, belgeler,
 ## günlükler, sistem kayıtları vb. için ortak veri girdileri
 ## 
-class_name Document
-extends Goods
+class_name Document extends Goods
 
 ## doküman türü
 enum DocType { 

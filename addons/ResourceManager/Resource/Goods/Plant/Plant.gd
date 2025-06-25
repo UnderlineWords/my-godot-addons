@@ -3,8 +3,7 @@
 ## Oyunda yer alan şifalı bitkiler, sebzeler 
 ## ve meyveler için ortak veri girdileri
 ## 
-class_name Plant
-extends Goods
+class_name Plant extends Goods
 
 enum Type {
 	HERB, 

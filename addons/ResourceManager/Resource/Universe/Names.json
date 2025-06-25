@@ -1,0 +1,2034 @@
+[
+	{
+		"name": "Aeolusja",
+		"slug": "aeolusja"
+	},
+	{
+		"name": "Aerdai Hontose",
+		"slug": "aerdai_hontose"
+	},
+	{
+		"name": "Aeriabudria",
+		"slug": "aeriabudria"
+	},
+	{
+		"name": "Aeriaeria",
+		"slug": "aeriaeria"
+	},
+	{
+		"name": "Aerthospa",
+		"slug": "aerthospa"
+	},
+	{
+		"name": "Aethelgard",
+		"slug": "aethelgard"
+	},
+	{
+		"name": "Aethelko",
+		"slug": "aethelko"
+	},
+	{
+		"name": "Agate",
+		"slug": "agate"
+	},
+	{
+		"name": "Aglericore",
+		"slug": "aglericore"
+	},
+	{
+		"name": "Aglok Vadkien",
+		"slug": "aglok_vadkien"
+	},
+	{
+		"name": "Aionan",
+		"slug": "aionan"
+	},
+	{
+		"name": "Alkonost",
+		"slug": "alkonost"
+	},
+	{
+		"name": "Antos",
+		"slug": "antos"
+	},
+	{
+		"name": "Apatite",
+		"slug": "apatite"
+	},
+	{
+		"name": "Arburto Wonalla",
+		"slug": "arburto_wonalla"
+	},
+	{
+		"name": "Arcdikar",
+		"slug": "arcdikar"
+	},
+	{
+		"name": "Arcrock",
+		"slug": "arcrock"
+	},
+	{
+		"name": "Ariaes Kappa",
+		"slug": "ariaes_kappa"
+	},
+	{
+		"name": "Arion",
+		"slug": "arion"
+	},
+	{
+		"name": "Ariza Zeropa",
+		"slug": "ariza_zeropa"
+	},
+	{
+		"name": "Armeligus",
+		"slug": "armeligus"
+	},
+	{
+		"name": "Artitus",
+		"slug": "artitus"
+	},
+	{
+		"name": "Atarthra",
+		"slug": "atarthra"
+	},
+	{
+		"name": "Atza",
+		"slug": "atza"
+	},
+	{
+		"name": "Augite",
+		"slug": "augite"
+	},
+	{
+		"name": "Aviman",
+		"slug": "aviman"
+	},
+	{
+		"name": "Avreus",
+		"slug": "avreus"
+	},
+	{
+		"name": "Azurite",
+		"slug": "azurite"
+	},
+	{
+		"name": "Badai",
+		"slug": "badai"
+	},
+	{
+		"name": "Baelius",
+		"slug": "baelius"
+	},
+	{
+		"name": "Banella",
+		"slug": "banella"
+	},
+	{
+		"name": "Banrog Vamos",
+		"slug": "banrog_vamos"
+	},
+	{
+		"name": "Banum",
+		"slug": "banum"
+	},
+	{
+		"name": "Barite",
+		"slug": "barite"
+	},
+	{
+		"name": "Barorkon",
+		"slug": "barorkon"
+	},
+	{
+		"name": "Bavana",
+		"slug": "bavana"
+	},
+	{
+		"name": "Bedaleko",
+		"slug": "bedaleko"
+	},
+	{
+		"name": "Belobog",
+		"slug": "belobog"
+	},
+	{
+		"name": "Beopia",
+		"slug": "beopia"
+	},
+	{
+		"name": "Betalla Derlejos",
+		"slug": "betalla_derlejos"
+	},
+	{
+		"name": "Betiru",
+		"slug": "betiru"
+	},
+	{
+		"name": "Betvin Corraleko",
+		"slug": "betvin_corraleko"
+	},
+	{
+		"name": "Beva Kappa",
+		"slug": "beva_kappa"
+	},
+	{
+		"name": "Bitivav",
+		"slug": "bitivav"
+	},
+	{
+		"name": "Biutilus",
+		"slug": "biutilus"
+	},
+	{
+		"name": "Boornia Sidenopa",
+		"slug": "boornia_sidenopa"
+	},
+	{
+		"name": "Boreas",
+		"slug": "boreas"
+	},
+	{
+		"name": "Borialeb",
+		"slug": "borialeb"
+	},
+	{
+		"name": "Brexisaz",
+		"slug": "brexisaz"
+	},
+	{
+		"name": "Brizoca",
+		"slug": "brizoca"
+	},
+	{
+		"name": "Brovav",
+		"slug": "brovav"
+	},
+	{
+		"name": "Brumal",
+		"slug": "brumal"
+	},
+	{
+		"name": "Brumnar",
+		"slug": "brumnar"
+	},
+	{
+		"name": "Cadaleko",
+		"slug": "cadaleko"
+	},
+	{
+		"name": "Calcite",
+		"slug": "calcite"
+	},
+	{
+		"name": "Campan Harorkon",
+		"slug": "campan_harorkon"
+	},
+	{
+		"name": "Carrol Funlok",
+		"slug": "carrol_funlok"
+	},
+	{
+		"name": "Cecan",
+		"slug": "cecan"
+	},
+	{
+		"name": "Celestine",
+		"slug": "celestine"
+	},
+	{
+		"name": "Ceridian",
+		"slug": "ceridian"
+	},
+	{
+		"name": "Cerongolia",
+		"slug": "cerongolia"
+	},
+	{
+		"name": "Cerpidor Minor",
+		"slug": "cerpidor_minor"
+	},
+	{
+		"name": "Ceti Aaleko",
+		"slug": "ceti_aaleko"
+	},
+	{
+		"name": "Ceti Wartaria",
+		"slug": "ceti_wartaria"
+	},
+	{
+		"name": "Chaislome",
+		"slug": "chaislome"
+	},
+	{
+		"name": "Chernobog",
+		"slug": "chernobog"
+	},
+	{
+		"name": "Cient Major",
+		"slug": "cient_major"
+	},
+	{
+		"name": "Ciern",
+		"slug": "ciern"
+	},
+	{
+		"name": "Conuridan",
+		"slug": "conuridan"
+	},
+	{
+		"name": "Copertronia",
+		"slug": "copertronia"
+	},
+	{
+		"name": "Corrillian Remon",
+		"slug": "corrillian_remon"
+	},
+	{
+		"name": "Corrorox",
+		"slug": "corrorox"
+	},
+	{
+		"name": "Corros",
+		"slug": "corros"
+	},
+	{
+		"name": "Cortronia Vablox",
+		"slug": "cortronia_vablox"
+	},
+	{
+		"name": "Corundum",
+		"slug": "corundum"
+	},
+	{
+		"name": "Cryonia",
+		"slug": "cryonia"
+	},
+	{
+		"name": "Cuonine Tasryn",
+		"slug": "cuonine_tasryn"
+	},
+	{
+		"name": "Cyan Corrburto",
+		"slug": "cyan_corrburto"
+	},
+	{
+		"name": "Cygnuspi",
+		"slug": "cygnuspi"
+	},
+	{
+		"name": "Cyrillaxde",
+		"slug": "cyrillaxde"
+	},
+	{
+		"name": "Daaleko",
+		"slug": "daaleko"
+	},
+	{
+		"name": "Daangolia Venlan",
+		"slug": "daangolia_venlan"
+	},
+	{
+		"name": "Daix",
+		"slug": "daix"
+	},
+	{
+		"name": "Daus Trelonia",
+		"slug": "daus_trelonia"
+	},
+	{
+		"name": "Dazhbog",
+		"slug": "dazhbog"
+	},
+	{
+		"name": "Deepdai",
+		"slug": "deepdai"
+	},
+	{
+		"name": "Deeplak",
+		"slug": "deeplak"
+	},
+	{
+		"name": "Delkien Sumalla",
+		"slug": "delkien_sumalla"
+	},
+	{
+		"name": "Delus",
+		"slug": "delus"
+	},
+	{
+		"name": "Demeterr",
+		"slug": "demeterr"
+	},
+	{
+		"name": "Depid",
+		"slug": "depid"
+	},
+	{
+		"name": "Derius",
+		"slug": "derius"
+	},
+	{
+		"name": "Deropia Steeptos",
+		"slug": "deropia_steeptos"
+	},
+	{
+		"name": "Diopside",
+		"slug": "diopside"
+	},
+	{
+		"name": "Domovoi",
+		"slug": "domovoi"
+	},
+	{
+		"name": "Dracono",
+		"slug": "dracono"
+	},
+	{
+		"name": "Drakorat",
+		"slug": "drakorat"
+	},
+	{
+		"name": "Dunopia Plingnor",
+		"slug": "dunopia_plingnor"
+	},
+	{
+		"name": "Eaburto",
+		"slug": "eaburto"
+	},
+	{
+		"name": "Majestton",
+		"slug": "majestton"
+	},
+	{
+		"name": "Nightadon",
+		"slug": "nightadon"
+	},
+	{
+		"name": "Plubudria",
+		"slug": "plubudria"
+	},
+	{
+		"name": "Eaus",
+		"slug": "eaus"
+	},
+	{
+		"name": "Edenite",
+		"slug": "edenite"
+	},
+	{
+		"name": "Elnor",
+		"slug": "elnor"
+	},
+	{
+		"name": "Elurini",
+		"slug": "elurini"
+	},
+	{
+		"name": "Enicusan",
+		"slug": "enicusan"
+	},
+	{
+		"name": "Enstatite",
+		"slug": "enstatite"
+	},
+	{
+		"name": "Eosolute",
+		"slug": "eosolute"
+	},
+	{
+		"name": "Erebus",
+		"slug": "erebus"
+	},
+	{
+		"name": "Erebusha",
+		"slug": "erebusha"
+	},
+	{
+		"name": "Erilliano",
+		"slug": "erilliano"
+	},
+	{
+		"name": "Eropia",
+		"slug": "eropia"
+	},
+	{
+		"name": "Ertrock",
+		"slug": "ertrock"
+	},
+	{
+		"name": "Ethosplac",
+		"slug": "ethosplac"
+	},
+	{
+		"name": "Eudialyte",
+		"slug": "eudialyte"
+	},
+	{
+		"name": "Farlok Etos",
+		"slug": "farlok_etos"
+	},
+	{
+		"name": "Farnia",
+		"slug": "farnia"
+	},
+	{
+		"name": "Farton",
+		"slug": "farton"
+	},
+	{
+		"name": "Farule",
+		"slug": "farule"
+	},
+	{
+		"name": "Feldspar",
+		"slug": "feldspar"
+	},
+	{
+		"name": "Fenrishure",
+		"slug": "fenrishure"
+	},
+	{
+		"name": "Fluorite",
+		"slug": "fluorite"
+	},
+	{
+		"name": "Foncania",
+		"slug": "foncania"
+	},
+	{
+		"name": "Foxchil",
+		"slug": "foxchil"
+	},
+	{
+		"name": "Foxopa",
+		"slug": "foxopa"
+	},
+	{
+		"name": "Fraylin",
+		"slug": "fraylin"
+	},
+	{
+		"name": "Fraynix",
+		"slug": "fraynix"
+	},
+	{
+		"name": "Frayuse",
+		"slug": "frayuse"
+	},
+	{
+		"name": "Funangalia",
+		"slug": "funangalia"
+	},
+	{
+		"name": "Fungangolia",
+		"slug": "fungangolia"
+	},
+	{
+		"name": "Fungpid",
+		"slug": "fungpid"
+	},
+	{
+		"name": "Fyoranca",
+		"slug": "fyoranca"
+	},
+	{
+		"name": "Galena",
+		"slug": "galena"
+	},
+	{
+		"name": "Gamayun",
+		"slug": "gamayun"
+	},
+	{
+		"name": "Ganolok",
+		"slug": "ganolok"
+	},
+	{
+		"name": "Ganopia",
+		"slug": "ganopia"
+	},
+	{
+		"name": "Ganuria",
+		"slug": "ganuria"
+	},
+	{
+		"name": "Glaucopha",
+		"slug": "glaucopha"
+	},
+	{
+		"name": "Glothos",
+		"slug": "glothos"
+	},
+	{
+		"name": "Glykonol",
+		"slug": "glykonol"
+	},
+	{
+		"name": "Gnarlec",
+		"slug": "gnarlec"
+	},
+	{
+		"name": "Gorgonlof",
+		"slug": "gorgonlof"
+	},
+	{
+		"name": "Grallico",
+		"slug": "grallico"
+	},
+	{
+		"name": "Gralnaxabi",
+		"slug": "gralnaxabi"
+	},
+	{
+		"name": "Gralnok",
+		"slug": "gralnok"
+	},
+	{
+		"name": "Grenpidor",
+		"slug": "grenpidor"
+	},
+	{
+		"name": "Grentos",
+		"slug": "grentos"
+	},
+	{
+		"name": "Gtharr",
+		"slug": "gtharr"
+	},
+	{
+		"name": "Guntus Sigma",
+		"slug": "guntus_sigma"
+	},
+	{
+		"name": "Gypsum",
+		"slug": "gypsum"
+	},
+	{
+		"name": "Haaronine Mercnar",
+		"slug": "haaronine_mercnar"
+	},
+	{
+		"name": "Hadesimu",
+		"slug": "hadesimu"
+	},
+	{
+		"name": "Halite",
+		"slug": "halite"
+	},
+	{
+		"name": "Hastingsite",
+		"slug": "hastingsite"
+	},
+	{
+		"name": "Honelos Refuge",
+		"slug": "honelos_refuge"
+	},
+	{
+		"name": "Hornblende",
+		"slug": "hornblende"
+	},
+	{
+		"name": "Hubdonia Sailer",
+		"slug": "hubdonia_sailer"
+	},
+	{
+		"name": "Hylaxor",
+		"slug": "hylaxor"
+	},
+	{
+		"name": "Hyliafvelka",
+		"slug": "hyliafvelka"
+	},
+	{
+		"name": "Hylospan",
+		"slug": "hylospan"
+	},
+	{
+		"name": "Hyloth",
+		"slug": "hyloth"
+	},
+	{
+		"name": "Hyperion",
+		"slug": "hyperion"
+	},
+	{
+		"name": "Hypersthene",
+		"slug": "hypersthene"
+	},
+	{
+		"name": "Hythor",
+		"slug": "hythor"
+	},
+	{
+		"name": "Ibanella",
+		"slug": "ibanella"
+	},
+	{
+		"name": "Ibkail",
+		"slug": "ibkail"
+	},
+	{
+		"name": "Icheria Seveko",
+		"slug": "icheria_seveko"
+	},
+	{
+		"name": "Indrik",
+		"slug": "indrik"
+	},
+	{
+		"name": "Iridikoba",
+		"slug": "iridikoba"
+	},
+	{
+		"name": "Irisodla",
+		"slug": "irisodla"
+	},
+	{
+		"name": "Ivtos",
+		"slug": "ivtos"
+	},
+	{
+		"name": "Ixonaxpo",
+		"slug": "ixonaxpo"
+	},
+	{
+		"name": "Jadeite",
+		"slug": "jadeite"
+	},
+	{
+		"name": "Janatoid",
+		"slug": "janatoid"
+	},
+	{
+		"name": "Janelerth",
+		"slug": "janelerth"
+	},
+	{
+		"name": "Janroid",
+		"slug": "janroid"
+	},
+	{
+		"name": "Janusrec",
+		"slug": "janusrec"
+	},
+	{
+		"name": "Jarilo",
+		"slug": "jarilo"
+	},
+	{
+		"name": "Jethen",
+		"slug": "jethen"
+	},
+	{
+		"name": "Jexal",
+		"slug": "jexal"
+	},
+	{
+		"name": "Jexenab",
+		"slug": "jexenab"
+	},
+	{
+		"name": "Jexuly",
+		"slug": "jexuly"
+	},
+	{
+		"name": "Jormungi",
+		"slug": "jormungi"
+	},
+	{
+		"name": "Jyextelo",
+		"slug": "jyextelo"
+	},
+	{
+		"name": "Jyntorba",
+		"slug": "jyntorba"
+	},
+	{
+		"name": "Jynxac",
+		"slug": "jynxac"
+	},
+	{
+		"name": "Kaanenella Quintus",
+		"slug": "kaanenella_quintus"
+	},
+	{
+		"name": "Kepanbula Tashlox",
+		"slug": "kepanbula_tashlox"
+	},
+	{
+		"name": "Kepian Loopa",
+		"slug": "kepian_loopa"
+	},
+	{
+		"name": "Ketangalia",
+		"slug": "ketangalia"
+	},
+	{
+		"name": "Ketcaris",
+		"slug": "ketcaris"
+	},
+	{
+		"name": "Ketminiar",
+		"slug": "ketminiar"
+	},
+	{
+		"name": "Khanoid",
+		"slug": "khanoid"
+	},
+	{
+		"name": "Khronen",
+		"slug": "khronen"
+	},
+	{
+		"name": "Kiaryn Minor",
+		"slug": "kiaryn_minor"
+	},
+	{
+		"name": "Klythica",
+		"slug": "klythica"
+	},
+	{
+		"name": "Knecania",
+		"slug": "knecania"
+	},
+	{
+		"name": "Kratosire",
+		"slug": "kratosire"
+	},
+	{
+		"name": "Krelluso",
+		"slug": "krelluso"
+	},
+	{
+		"name": "Kreshnu",
+		"slug": "kreshnu"
+	},
+	{
+		"name": "Kryllapola",
+		"slug": "kryllapola"
+	},
+	{
+		"name": "Kuanella",
+		"slug": "kuanella"
+	},
+	{
+		"name": "Kueria",
+		"slug": "kueria"
+	},
+	{
+		"name": "Kyanite",
+		"slug": "kyanite"
+	},
+	{
+		"name": "La Tacuridian",
+		"slug": "la_tacuridian"
+	},
+	{
+		"name": "La Wanrax",
+		"slug": "la_wanrax"
+	},
+	{
+		"name": "Labradorite",
+		"slug": "labradorite"
+	},
+	{
+		"name": "Ladaja",
+		"slug": "ladaja"
+	},
+	{
+		"name": "Ladbudram",
+		"slug": "ladbudram"
+	},
+	{
+		"name": "Ladudros",
+		"slug": "ladudros"
+	},
+	{
+		"name": "Lanenia",
+		"slug": "lanenia"
+	},
+	{
+		"name": "Las Antidian Cyion",
+		"slug": "las_antidian_cyion"
+	},
+	{
+		"name": "Legnia Kepuram",
+		"slug": "legnia_kepuram"
+	},
+	{
+		"name": "Legumi",
+		"slug": "legumi"
+	},
+	{
+		"name": "Leshy",
+		"slug": "leshy"
+	},
+	{
+		"name": "Letotkali",
+		"slug": "letotkali"
+	},
+	{
+		"name": "Leviathga",
+		"slug": "leviathga"
+	},
+	{
+		"name": "Ljarbusa",
+		"slug": "ljarbusa"
+	},
+	{
+		"name": "Lokien",
+		"slug": "lokien"
+	},
+	{
+		"name": "Los Outthra",
+		"slug": "los_outthra"
+	},
+	{
+		"name": "Lunara",
+		"slug": "lunara"
+	},
+	{
+		"name": "Lyrexia",
+		"slug": "lyrexia"
+	},
+	{
+		"name": "Maicoma",
+		"slug": "maicoma"
+	},
+	{
+		"name": "Majestesh Inttose",
+		"slug": "majestesh_inttose"
+	},
+	{
+		"name": "Malachite",
+		"slug": "malachite"
+	},
+	{
+		"name": "Menella Honelius",
+		"slug": "menella_honelius"
+	},
+	{
+		"name": "Mercenia",
+		"slug": "mercenia"
+	},
+	{
+		"name": "Mercuram",
+		"slug": "mercuram"
+	},
+	{
+		"name": "Mereran",
+		"slug": "mereran"
+	},
+	{
+		"name": "Mergo Xyfiner",
+		"slug": "mergo_xyfiner"
+	},
+	{
+		"name": "Merlok Cecania",
+		"slug": "merlok_cecania"
+	},
+	{
+		"name": "Mertara Whimvin",
+		"slug": "mertara_whimvin"
+	},
+	{
+		"name": "Mertos",
+		"slug": "mertos"
+	},
+	{
+		"name": "Mica",
+		"slug": "mica"
+	},
+	{
+		"name": "Miranpidor Nitfiner",
+		"slug": "miranpidor_nitfiner"
+	},
+	{
+		"name": "Mohelusba",
+		"slug": "mohelusba"
+	},
+	{
+		"name": "Mokosh",
+		"slug": "mokosh"
+	},
+	{
+		"name": "Morana",
+		"slug": "morana"
+	},
+	{
+		"name": "Mrovart",
+		"slug": "mrovart"
+	},
+	{
+		"name": "Mubuphus",
+		"slug": "mubuphus"
+	},
+	{
+		"name": "Muniza Banttose",
+		"slug": "muniza_banttose"
+	},
+	{
+		"name": "Munon",
+		"slug": "munon"
+	},
+	{
+		"name": "Myrddin",
+		"slug": "myrddin"
+	},
+	{
+		"name": "Myrnopo",
+		"slug": "myrnopo"
+	},
+	{
+		"name": "Nanchin",
+		"slug": "nanchin"
+	},
+	{
+		"name": "Nandai",
+		"slug": "nandai"
+	},
+	{
+		"name": "Nandoria Cyix",
+		"slug": "nandoria_cyix"
+	},
+	{
+		"name": "Nanoros",
+		"slug": "nanoros"
+	},
+	{
+		"name": "Narelialia",
+		"slug": "narelialia"
+	},
+	{
+		"name": "Narler",
+		"slug": "narler"
+	},
+	{
+		"name": "Naropia",
+		"slug": "naropia"
+	},
+	{
+		"name": "Nartronia Eapod",
+		"slug": "nartronia_eapod"
+	},
+	{
+		"name": "Nasalis",
+		"slug": "nasalis"
+	},
+	{
+		"name": "Nemlake",
+		"slug": "nemlake"
+	},
+	{
+		"name": "New Zingtania",
+		"slug": "new_zingtania"
+	},
+	{
+		"name": "Nexor",
+		"slug": "nexor"
+	},
+	{
+		"name": "Nightudros",
+		"slug": "nightudros"
+	},
+	{
+		"name": "Nires Spod",
+		"slug": "nires_spod"
+	},
+	{
+		"name": "Niritas Eavis",
+		"slug": "niritas_eavis"
+	},
+	{
+		"name": "Nirntos",
+		"slug": "nirntos"
+	},
+	{
+		"name": "Nitam Sulopia",
+		"slug": "nitam_sulopia"
+	},
+	{
+		"name": "Nocturne",
+		"slug": "nocturne"
+	},
+	{
+		"name": "Nonar Quintus",
+		"slug": "nonar_quintus"
+	},
+	{
+		"name": "Nonule Major",
+		"slug": "nonule_major"
+	},
+	{
+		"name": "North Beteus",
+		"slug": "north_beteus"
+	},
+	{
+		"name": "North Teperan",
+		"slug": "north_teperan"
+	},
+	{
+		"name": "Noxisjolo",
+		"slug": "noxisjolo"
+	},
+	{
+		"name": "Nymirac",
+		"slug": "nymirac"
+	},
+	{
+		"name": "Nymos",
+		"slug": "nymos"
+	},
+	{
+		"name": "Oceanusy",
+		"slug": "oceanusy"
+	},
+	{
+		"name": "Old Lutos",
+		"slug": "old_lutos"
+	},
+	{
+		"name": "Olthumi",
+		"slug": "olthumi"
+	},
+	{
+		"name": "Coperesha",
+		"slug": "coperesha"
+	},
+	{
+		"name": "Ivoniaba",
+		"slug": "ivoniaba"
+	},
+	{
+		"name": "Plingon",
+		"slug": "plingon"
+	},
+	{
+		"name": "Talpod",
+		"slug": "talpod"
+	},
+	{
+		"name": "Oqtor",
+		"slug": "oqtor"
+	},
+	{
+		"name": "Oqtorian",
+		"slug": "oqtorian"
+	},
+	{
+		"name": "Orpheleke",
+		"slug": "orpheleke"
+	},
+	{
+		"name": "Orthoclase",
+		"slug": "orthoclase"
+	},
+	{
+		"name": "Orynica",
+		"slug": "orynica"
+	},
+	{
+		"name": "Outoin Sidenton",
+		"slug": "outoin_sidenton"
+	},
+	{
+		"name": "Outumi Warcaris",
+		"slug": "outumi_warcaris"
+	},
+	{
+		"name": "Oxbongo",
+		"slug": "oxbongo"
+	},
+	{
+		"name": "Oxtropic",
+		"slug": "oxtropic"
+	},
+	{
+		"name": "Ozton",
+		"slug": "ozton"
+	},
+	{
+		"name": "Pallaspan",
+		"slug": "pallaspan"
+	},
+	{
+		"name": "Panbudria",
+		"slug": "panbudria"
+	},
+	{
+		"name": "Papborto",
+		"slug": "papborto"
+	},
+	{
+		"name": "Papbudria",
+		"slug": "papbudria"
+	},
+	{
+		"name": "Pargasite",
+		"slug": "pargasite"
+	},
+	{
+		"name": "Parock",
+		"slug": "parock"
+	},
+	{
+		"name": "Patelialia Oxebus",
+		"slug": "patelialia_oxebus"
+	},
+	{
+		"name": "Pectolite",
+		"slug": "pectolite"
+	},
+	{
+		"name": "Pernari",
+		"slug": "pernari"
+	},
+	{
+		"name": "Perun",
+		"slug": "perun"
+	},
+	{
+		"name": "Phybax",
+		"slug": "phybax"
+	},
+	{
+		"name": "Ploraksy",
+		"slug": "ploraksy"
+	},
+	{
+		"name": "Plorit",
+		"slug": "plorit"
+	},
+	{
+		"name": "Poolacalla",
+		"slug": "poolacalla"
+	},
+	{
+		"name": "Poropia",
+		"slug": "poropia"
+	},
+	{
+		"name": "Praion",
+		"slug": "praion"
+	},
+	{
+		"name": "Pranella",
+		"slug": "pranella"
+	},
+	{
+		"name": "Praton",
+		"slug": "praton"
+	},
+	{
+		"name": "Praxione",
+		"slug": "praxione"
+	},
+	{
+		"name": "Priyox",
+		"slug": "priyox"
+	},
+	{
+		"name": "Proatoid Taiian",
+		"slug": "proatoid_taiian"
+	},
+	{
+		"name": "Prythosym",
+		"slug": "prythosym"
+	},
+	{
+		"name": "Pyamis",
+		"slug": "pyamis"
+	},
+	{
+		"name": "Pylosif",
+		"slug": "pylosif"
+	},
+	{
+		"name": "Pyralia",
+		"slug": "pyralia"
+	},
+	{
+		"name": "Pyraliatoa",
+		"slug": "pyraliatoa"
+	},
+	{
+		"name": "Pyrite",
+		"slug": "pyrite"
+	},
+	{
+		"name": "Pytropic",
+		"slug": "pytropic"
+	},
+	{
+		"name": "Qorath",
+		"slug": "qorath"
+	},
+	{
+		"name": "Quellarme",
+		"slug": "quellarme"
+	},
+	{
+		"name": "Quintpora",
+		"slug": "quintpora"
+	},
+	{
+		"name": "Qunlar",
+		"slug": "qunlar"
+	},
+	{
+		"name": "Quonni",
+		"slug": "quonni"
+	},
+	{
+		"name": "Quoryl",
+		"slug": "quoryl"
+	},
+	{
+		"name": "Qylarima",
+		"slug": "qylarima"
+	},
+	{
+		"name": "Ramis",
+		"slug": "ramis"
+	},
+	{
+		"name": "Rheactore",
+		"slug": "rheactore"
+	},
+	{
+		"name": "Rhenosbe",
+		"slug": "rhenosbe"
+	},
+	{
+		"name": "Rhodochrosite",
+		"slug": "rhodochrosite"
+	},
+	{
+		"name": "Rhodonite",
+		"slug": "rhodonite"
+	},
+	{
+		"name": "Rod",
+		"slug": "rod"
+	},
+	{
+		"name": "Rudesuria",
+		"slug": "rudesuria"
+	},
+	{
+		"name": "Rusalka",
+		"slug": "rusalka"
+	},
+	{
+		"name": "Rylakbe",
+		"slug": "rylakbe"
+	},
+	{
+		"name": "Rylosotob",
+		"slug": "rylosotob"
+	},
+	{
+		"name": "Saial",
+		"slug": "saial"
+	},
+	{
+		"name": "Saracrum",
+		"slug": "saracrum"
+	},
+	{
+		"name": "Satesh",
+		"slug": "satesh"
+	},
+	{
+		"name": "Selonnam",
+		"slug": "selonnam"
+	},
+	{
+		"name": "Senvana",
+		"slug": "senvana"
+	},
+	{
+		"name": "Shandaknia",
+		"slug": "shandaknia"
+	},
+	{
+		"name": "Shandakurinia",
+		"slug": "shandakurinia"
+	},
+	{
+		"name": "Siderite",
+		"slug": "siderite"
+	},
+	{
+		"name": "Silvanus",
+		"slug": "silvanus"
+	},
+	{
+		"name": "Simargl",
+		"slug": "simargl"
+	},
+	{
+		"name": "Sirmanipo",
+		"slug": "sirmanipo"
+	},
+	{
+		"name": "Sizencaris",
+		"slug": "sizencaris"
+	},
+	{
+		"name": "Sizenchia",
+		"slug": "sizenchia"
+	},
+	{
+		"name": "Sizenvana Thrytan",
+		"slug": "sizenvana_thrytan"
+	},
+	{
+		"name": "Skarnoyl",
+		"slug": "skarnoyl"
+	},
+	{
+		"name": "Skorneth",
+		"slug": "skorneth"
+	},
+	{
+		"name": "Solara",
+		"slug": "solara"
+	},
+	{
+		"name": "Sonacan Zeroin",
+		"slug": "sonacan_zeroin"
+	},
+	{
+		"name": "Sopalis Kulox",
+		"slug": "sopalis_kulox"
+	},
+	{
+		"name": "Spinel",
+		"slug": "spinel"
+	},
+	{
+		"name": "Steepamis Cminiar",
+		"slug": "steepamis_cminiar"
+	},
+	{
+		"name": "Steepitas Vestose",
+		"slug": "steepitas_vestose"
+	},
+	{
+		"name": "Stribog",
+		"slug": "stribog"
+	},
+	{
+		"name": "Suilavera",
+		"slug": "suilavera"
+	},
+	{
+		"name": "Suilchin Araka",
+		"slug": "suilchin_araka"
+	},
+	{
+		"name": "Suilfiner Whatorox",
+		"slug": "suilfiner_whatorox"
+	},
+	{
+		"name": "Suiltos",
+		"slug": "suiltos"
+	},
+	{
+		"name": "Suleaux Major",
+		"slug": "suleaux_major"
+	},
+	{
+		"name": "Sumchin",
+		"slug": "sumchin"
+	},
+	{
+		"name": "Sumilla",
+		"slug": "sumilla"
+	},
+	{
+		"name": "Sunix",
+		"slug": "sunix"
+	},
+	{
+		"name": "Sunus Pertiza",
+		"slug": "sunus_pertiza"
+	},
+	{
+		"name": "Svarog",
+		"slug": "svarog"
+	},
+	{
+		"name": "Svatan",
+		"slug": "svatan"
+	},
+	{
+		"name": "Sydoneti",
+		"slug": "sydoneti"
+	},
+	{
+		"name": "Sylornino",
+		"slug": "sylornino"
+	},
+	{
+		"name": "Synkail",
+		"slug": "synkail"
+	},
+	{
+		"name": "Tadaroid",
+		"slug": "tadaroid"
+	},
+	{
+		"name": "Tadnt",
+		"slug": "tadnt"
+	},
+	{
+		"name": "Tadoda Fogtose",
+		"slug": "tadoda_fogtose"
+	},
+	{
+		"name": "Taelos",
+		"slug": "taelos"
+	},
+	{
+		"name": "Tagan",
+		"slug": "tagan"
+	},
+	{
+		"name": "Taglok",
+		"slug": "taglok"
+	},
+	{
+		"name": "Tagolok",
+		"slug": "tagolok"
+	},
+	{
+		"name": "Tagopa",
+		"slug": "tagopa"
+	},
+	{
+		"name": "Taiem",
+		"slug": "taiem"
+	},
+	{
+		"name": "Talc",
+		"slug": "talc"
+	},
+	{
+		"name": "Talmminiar",
+		"slug": "talmminiar"
+	},
+	{
+		"name": "Talmshaa",
+		"slug": "talmshaa"
+	},
+	{
+		"name": "Tamallari",
+		"slug": "tamallari"
+	},
+	{
+		"name": "Tamryn",
+		"slug": "tamryn"
+	},
+	{
+		"name": "Tardoria Niropia",
+		"slug": "tardoria_niropia"
+	},
+	{
+		"name": "Tartarus",
+		"slug": "tartarus"
+	},
+	{
+		"name": "Tau Ceti Xencania",
+		"slug": "tau_ceti_xencania"
+	},
+	{
+		"name": "Tau Hurdan",
+		"slug": "tau_hurdan"
+	},
+	{
+		"name": "Thaanella",
+		"slug": "thaanella"
+	},
+	{
+		"name": "Thanurdan",
+		"slug": "thanurdan"
+	},
+	{
+		"name": "Theta Depcania",
+		"slug": "theta_depcania"
+	},
+	{
+		"name": "Theta Tolcaris",
+		"slug": "theta_tolcaris"
+	},
+	{
+		"name": "Thetisca",
+		"slug": "thetisca"
+	},
+	{
+		"name": "Thexuspa",
+		"slug": "thexuspa"
+	},
+	{
+		"name": "Threxil",
+		"slug": "threxil"
+	},
+	{
+		"name": "Tolus",
+		"slug": "tolus"
+	},
+	{
+		"name": "Tourmaline",
+		"slug": "tourmaline"
+	},
+	{
+		"name": "Treepda",
+		"slug": "treepda"
+	},
+	{
+		"name": "Treepvas",
+		"slug": "treepvas"
+	},
+	{
+		"name": "Treloda",
+		"slug": "treloda"
+	},
+	{
+		"name": "Tremolite",
+		"slug": "tremolite"
+	},
+	{
+		"name": "Tritonoru",
+		"slug": "tritonoru"
+	},
+	{
+		"name": "Tyrax",
+		"slug": "tyrax"
+	},
+	{
+		"name": "Ulthanac",
+		"slug": "ulthanac"
+	},
+	{
+		"name": "Umes Wundoria",
+		"slug": "umes_wundoria"
+	},
+	{
+		"name": "Umoda",
+		"slug": "umoda"
+	},
+	{
+		"name": "Uradon",
+		"slug": "uradon"
+	},
+	{
+		"name": "Uranarth",
+		"slug": "uranarth"
+	},
+	{
+		"name": "Uranavera",
+		"slug": "uranavera"
+	},
+	{
+		"name": "Uraniati",
+		"slug": "uraniati"
+	},
+	{
+		"name": "Uthyrinbe",
+		"slug": "uthyrinbe"
+	},
+	{
+		"name": "Vabdikar",
+		"slug": "vabdikar"
+	},
+	{
+		"name": "Vabgolia",
+		"slug": "vabgolia"
+	},
+	{
+		"name": "Vadeus Maztro",
+		"slug": "vadeus_maztro"
+	},
+	{
+		"name": "Vadgania",
+		"slug": "vadgania"
+	},
+	{
+		"name": "Vadian Eladon",
+		"slug": "vadian_eladon"
+	},
+	{
+		"name": "Vadvin",
+		"slug": "vadvin"
+	},
+	{
+		"name": "Vakfall",
+		"slug": "vakfall"
+	},
+	{
+		"name": "Valerium",
+		"slug": "valerium"
+	},
+	{
+		"name": "Vamilla Thanlok",
+		"slug": "vamilla_thanlok"
+	},
+	{
+		"name": "Vaminax",
+		"slug": "vaminax"
+	},
+	{
+		"name": "Vamury",
+		"slug": "vamury"
+	},
+	{
+		"name": "Veles",
+		"slug": "veles"
+	},
+	{
+		"name": "Velixoma",
+		"slug": "velixoma"
+	},
+	{
+		"name": "Venpid",
+		"slug": "venpid"
+	},
+	{
+		"name": "Veridia",
+		"slug": "veridia"
+	},
+	{
+		"name": "Verumi",
+		"slug": "verumi"
+	},
+	{
+		"name": "Vestajut",
+		"slug": "vestajut"
+	},
+	{
+		"name": "Vexilar",
+		"slug": "vexilar"
+	},
+	{
+		"name": "Vexorima",
+		"slug": "vexorima"
+	},
+	{
+		"name": "Vodyanoy",
+		"slug": "vodyanoy"
+	},
+	{
+		"name": "Vopelius",
+		"slug": "vopelius"
+	},
+	{
+		"name": "Vornath",
+		"slug": "vornath"
+	},
+	{
+		"name": "Vrexia",
+		"slug": "vrexia"
+	},
+	{
+		"name": "Vylesh",
+		"slug": "vylesh"
+	},
+	{
+		"name": "Vylorca",
+		"slug": "vylorca"
+	},
+	{
+		"name": "Vylosadu",
+		"slug": "vylosadu"
+	},
+	{
+		"name": "Vyronup",
+		"slug": "vyronup"
+	},
+	{
+		"name": "Wadopia",
+		"slug": "wadopia"
+	},
+	{
+		"name": "Waniru Soprax",
+		"slug": "waniru_soprax"
+	},
+	{
+		"name": "Wanrog Grenatoid",
+		"slug": "wanrog_grenatoid"
+	},
+	{
+		"name": "Wanza Plogolia",
+		"slug": "wanza_plogolia"
+	},
+	{
+		"name": "Warbudram",
+		"slug": "warbudram"
+	},
+	{
+		"name": "Waros",
+		"slug": "waros"
+	},
+	{
+		"name": "West Cytronia",
+		"slug": "west_cytronia"
+	},
+	{
+		"name": "West Raniza",
+		"slug": "west_raniza"
+	},
+	{
+		"name": "Whatdania",
+		"slug": "whatdania"
+	},
+	{
+		"name": "Whatlax",
+		"slug": "whatlax"
+	},
+	{
+		"name": "Whatury",
+		"slug": "whatury"
+	},
+	{
+		"name": "Whimcania",
+		"slug": "whimcania"
+	},
+	{
+		"name": "Whimeran",
+		"slug": "whimeran"
+	},
+	{
+		"name": "Whimfiner",
+		"slug": "whimfiner"
+	},
+	{
+		"name": "Whimuridan",
+		"slug": "whimuridan"
+	},
+	{
+		"name": "Wimenella Thabudram",
+		"slug": "wimenella_thabudram"
+	},
+	{
+		"name": "Wimomi Tamal",
+		"slug": "wimomi_tamal"
+	},
+	{
+		"name": "Wimong Funbudria",
+		"slug": "wimong_funbudria"
+	},
+	{
+		"name": "Woaldi",
+		"slug": "woaldi"
+	},
+	{
+		"name": "Woler",
+		"slug": "woler"
+	},
+	{
+		"name": "Wollastonite",
+		"slug": "wollastonite"
+	},
+	{
+		"name": "Wonalos Pluarius",
+		"slug": "wonalos_pluarius"
+	},
+	{
+		"name": "Wonanbula",
+		"slug": "wonanbula"
+	},
+	{
+		"name": "Wonaroid",
+		"slug": "wonaroid"
+	},
+	{
+		"name": "Wouridan",
+		"slug": "wouridan"
+	},
+	{
+		"name": "Wrythesdi",
+		"slug": "wrythesdi"
+	},
+	{
+		"name": "Wundonia",
+		"slug": "wundonia"
+	},
+	{
+		"name": "Xecon",
+		"slug": "xecon"
+	},
+	{
+		"name": "Xees",
+		"slug": "xees"
+	},
+	{
+		"name": "Xekail",
+		"slug": "xekail"
+	},
+	{
+		"name": "Xelos Proreus",
+		"slug": "xelos_proreus"
+	},
+	{
+		"name": "Xenerebus",
+		"slug": "xenerebus"
+	},
+	{
+		"name": "Xeniav",
+		"slug": "xeniav"
+	},
+	{
+		"name": "Xetronia Silva",
+		"slug": "xetronia_silva"
+	},
+	{
+		"name": "Xilos",
+		"slug": "xilos"
+	},
+	{
+		"name": "Xioilla",
+		"slug": "xioilla"
+	},
+	{
+		"name": "Xylos",
+		"slug": "xylos"
+	},
+	{
+		"name": "Xylosjile",
+		"slug": "xylosjile"
+	},
+	{
+		"name": "Xylosoma",
+		"slug": "xylosoma"
+	},
+	{
+		"name": "Xyoin",
+		"slug": "xyoin"
+	},
+	{
+		"name": "Xytose",
+		"slug": "xytose"
+	},
+	{
+		"name": "Yithrexa",
+		"slug": "yithrexa"
+	},
+	{
+		"name": "Ythira",
+		"slug": "ythira"
+	},
+	{
+		"name": "Ythomka",
+		"slug": "ythomka"
+	},
+	{
+		"name": "Ythosiya",
+		"slug": "ythosiya"
+	},
+	{
+		"name": "Zedos Vakumi",
+		"slug": "zedos_vakumi"
+	},
+	{
+		"name": "Zemillian",
+		"slug": "zemillian"
+	},
+	{
+		"name": "Zemule Tamovin",
+		"slug": "zemule_tamovin"
+	},
+	{
+		"name": "Zengania",
+		"slug": "zengania"
+	},
+	{
+		"name": "Zengant",
+		"slug": "zengant"
+	},
+	{
+		"name": "Zengopia",
+		"slug": "zengopia"
+	},
+	{
+		"name": "Zengtos",
+		"slug": "zengtos"
+	},
+	{
+		"name": "Zenium",
+		"slug": "zenium"
+	},
+	{
+		"name": "Zenthium",
+		"slug": "zenthium"
+	},
+	{
+		"name": "Zephrone",
+		"slug": "zephrone"
+	},
+	{
+		"name": "Zephyria",
+		"slug": "zephyria"
+	},
+	{
+		"name": "Zeroros",
+		"slug": "zeroros"
+	},
+	{
+		"name": "Zervin",
+		"slug": "zervin"
+	},
+	{
+		"name": "Carros",
+		"slug": "carros"
+	},
+	{
+		"name": "Coneran",
+		"slug": "coneran"
+	},
+	{
+		"name": "Winoxut",
+		"slug": "winoxut"
+	},
+	{
+		"name": "Xiokien",
+		"slug": "xiokien"
+	},
+	{
+		"name": "Zetesco",
+		"slug": "zetesco"
+	},
+	{
+		"name": "Zhakaron",
+		"slug": "zhakaron"
+	},
+	{
+		"name": "Zhakuly",
+		"slug": "zhakuly"
+	},
+	{
+		"name": "Zholara",
+		"slug": "zholara"
+	},
+	{
+		"name": "Zilant",
+		"slug": "zilant"
+	},
+	{
+		"name": "Zircon",
+		"slug": "zircon"
+	},
+	{
+		"name": "Zorya",
+		"slug": "zorya"
+	},
+	{
+		"name": "Zothirfa",
+		"slug": "zothirfa"
+	},
+	{
+		"name": "Zynthoc",
+		"slug": "zynthoc"
+	}
+]

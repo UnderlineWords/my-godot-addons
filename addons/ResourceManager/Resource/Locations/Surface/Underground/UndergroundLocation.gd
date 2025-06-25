@@ -1,5 +1,4 @@
 ## 
 ## UndergroundLocation
 ## 
-class_name UndergroundLocation
-extends SurfaceLocation
+class_name UndergroundLocation extends SurfaceLocation

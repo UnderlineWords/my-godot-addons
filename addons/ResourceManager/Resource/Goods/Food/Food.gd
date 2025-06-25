@@ -3,8 +3,7 @@
 ## Oyunda yer alan tüm yiyecekler ve
 ## içecekler için ortak veri girdileri
 ## 
-class_name Food
-extends Goods
+class_name Food extends Goods
 
 ## tür/kategori
 enum Category {

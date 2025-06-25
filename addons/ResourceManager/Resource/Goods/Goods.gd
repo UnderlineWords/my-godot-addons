@@ -4,8 +4,7 @@
 ## tüm bileşenler/ürünler için ortak veri
 ## girdilerinin bulunduğu "üst ana" sınıf
 ## 
-class_name Goods
-extends ResourceManager
+class_name Goods extends ResourceManager
 
 enum Classification { 
 	AMMO,
@@ -50,6 +49,10 @@ enum Classification {
 ## IS UPGRADABLE?
 ## Nesne geliştirilebilir mi?
 @export var upgradable: bool = false
+
+## IS REPAIRABLE?
+## Nesne tamir edilebilir mi?
+@export var repairable: bool = false
 
 ## IS CRAFTABLE?
 ## Nesne üretilebilir mi?

@@ -1,11 +1,16 @@
 ## 
 ## Vehicle
 ## 
-class_name Vehicle
-extends Goods
+class_name Vehicle extends Goods
 
+## TYPE
+## oyuna eklenecek olan araç türü
 enum Type {
+	## Oyundaki gemiler için
 	Ship,
+	## Gezegen, ay veya asteroit yüzeyinde
+	## keşif, savunma ve madencilik amaçlı
+	## kullanılabilen araçlar
 	Exover
 }
 
@@ -15,6 +20,31 @@ enum Type {
 ## MANUFACTURER
 ## üretici
 @export var manufacturer = Manufacturer.Ship.Aurevo
+
+## DECKS
+## Sadece gemilere ait güverteler
+enum Decks {
+	## Gemi komutasının ve navigasyon 
+	## sistemlerinin bulunduğu ana kontrol merkezi
+	Bridge,
+	## Geminin enerji sistemleri, motorları 
+	## ve teknik altyapısının yönetildiği bakım güvertesi
+	Engineering,
+	## Bilimsel araştırma, sağlık hizmetleri ve hatta
+	## topraksız tarım testlerinin yürütüldüğü güverte
+	Lab,
+	## Ticari yükler, kaynaklar veya
+	## materyallerin depolandığı ana kargo güvertesi
+	Cargo,
+	## keşif gemilerinin iniş/kalkış yaptığı platform
+	Hangar,
+	## Personelin konakladığı ve dinlendiği güverte
+	Quarters
+}
+
+## DECKS
+## Gemide yer alacak güverteler
+@export var decks: Decks = Decks.Bridge
 
 ## ENGINE
 ## entegreli maksimum güç kapasitesi
@@ -40,6 +70,7 @@ enum Type {
 @export var jump_range: float
 
 ## CARGO CAPACITY
+## eğer gemi veya yüzey aracında kargo modülü varsa,
 ## taşıyabileceği yük kapasitesi (grid)
 @export var cargo_capacity: int = 64
 

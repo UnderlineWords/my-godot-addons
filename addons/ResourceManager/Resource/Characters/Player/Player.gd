@@ -2,8 +2,7 @@
 ## Player
 ## Sadece "player"a özgü veri girdileri
 ## 
-class_name Player
-extends Character
+class_name Player extends Character
 
 @export_group("General")
 ## STARVATION

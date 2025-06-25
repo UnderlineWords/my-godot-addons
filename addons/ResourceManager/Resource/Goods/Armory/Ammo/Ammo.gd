@@ -1,8 +1,7 @@
 ## 
 ## Ammo
 ## 
-class_name Ammo
-extends Goods
+class_name Ammo extends Goods
 
 enum AmmoType {
 	Energy,

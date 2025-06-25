@@ -1,11 +1,10 @@
 ## 
-## CelestialBody
+## Moon
 ## 
-class_name CelestialBody
-extends ResourceManager
+class_name Moon extends ResourceManager
 
 ## NAME
-## gezegen/uydu/asteroit adı
+## ay/uydu adı
 @export var name: String
 
 ## RESOURCES

@@ -3,8 +3,7 @@
 ## Çıkarılabilir cevherler, yabancı bitki örtüsü veya
 ## gizli yapılar içeren yeraltı bölgeleri
 ## 
-class_name Cave
-extends UndergroundLocation
+class_name Cave extends UndergroundLocation
 
 ## WATER PRESENCE
 ## mağarada su bulunma durumu 

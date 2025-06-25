@@ -1,8 +1,7 @@
 ## 
 ## AtmosphereResource
 ## 
-class_name AtmosphereResource
-extends ResourceManager
+class_name AtmosphereResource extends ResourceManager
 
 ## TYPE
 ## atmosfer türü ve özellikleri
