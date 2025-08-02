@@ -19,66 +19,66 @@ const MaxAsteroid: int = 3
 const MinMoon: int = 0
 const MaxMoon: int = 4
 
+## bir gezegenin toplam gün uzunluğu aralığı
+## dünyaya göre ±%20'lik sapma
+const MinDayLenght: int = 19
+const MaxDayLenght: int = 29
+## bir gezegenin toplam yıl uzunluğu aralığı
+## dünyaya göre ±%20'lik sapma
+const MinYearLenght: int = 292
+const MaxYearLenght: int = 438
+
 ## oluşturulan yıldız sistemlerine ait json
 ## dosyalarının kaydedileceği dizin adı
 const STARSYSTEM_DIRNAME := "StarSystems"
 
+## @link https://docs.godotengine.org/en/latest/tutorials/io/data_paths.html
+const OUTPUT_PATH := "user://Galaxies.json"
+
 ## Veri Paketleri
-## oluşturulan galaksilerin paketlendiği array
 var galaxies = []
-## oluşturulan yıldız sistemlerinin paketlendiği array
 var star_systems = []
+var planets = []
 
 ## Oyundaki maksimum galaksi sayısı
-## boş bırakılırsa "MinGalaxy - MaxGalaxy" 
-## değer aralığında rastgele bir sayı üretilir
-@export_range(MinGalaxy, MaxGalaxy) var max_galaxy_count: int = randi_range(MinGalaxy, MaxGalaxy)
+@export_range(MinGalaxy, MaxGalaxy) var max_galaxy_count: int = Dice.range(MinGalaxy, MaxGalaxy)
 
 ## Bir galaksideki maksimum yıldız sistemi sayısı
-## boş bırakılırsa "MinSystem - MaxSystem" 
-## değer aralığında rastgele bir sayı üretilir
-@export_range(MinSystem, MaxSystem) var max_system_count: int = randi_range(MinSystem, MaxSystem)
+@export_range(MinSystem, MaxSystem) var max_system_count: int = Dice.range(MinSystem, MaxSystem)
 
 ## Bir yıldız sistemi içindeki en fazla gezegen sayısı
-## boş bırakılırsa "MinPlanet - MaxPlanet" 
-## değer aralığında rastgele bir sayı üretilir
-@export_range(MinPlanet, MaxPlanet) var max_planet_count: int = randi_range(MinPlanet, MaxPlanet)
+@export_range(MinPlanet, MaxPlanet) var max_planet_count: int = Dice.range(MinPlanet, MaxPlanet)
 
 ## Bir yıldız sistemi içindeki en fazla asteroit kuşak sayısı
-## boş bırakılırsa "MinAsteroid - MaxAsteroid" 
-## değer aralığında rastgele bir sayı üretilir
-@export_range(MinAsteroid, MaxAsteroid) var max_asteroid_count: int = randi_range(MinAsteroid, MaxAsteroid)
+@export_range(MinAsteroid, MaxAsteroid) var max_asteroid_count: int = Dice.range(MinAsteroid, MaxAsteroid)
 
 ## Bir gezegene ait en fazla uydu sayısı
-## boş bırakılırsa "MinMoon ila MaxMoon" 
-## değer aralığında rastgele bir sayı üretilir
-@export_range(MinMoon, MaxMoon) var max_moon_count: int = randi_range(MinMoon, MaxMoon)
+@export_range(MinMoon, MaxMoon) var max_moon_count: int = Dice.range(MinMoon, MaxMoon)
 
 ## 
 ## 
 ## 
 func _ready():
+	randomize()
 	generate_galaxy()
 
 ## 
 ## 
 ## 
 func generate_galaxy():
-	var galaxy_count = randi_range(MinGalaxy, max_galaxy_count)
+	var galaxy_count = Dice.range(MinGalaxy, max_galaxy_count)
 
-	for i in range(min(galaxy_count, NameProvider.getNames().size())):
-		var entry = NameProvider.randomName(i)
+	for i in range(min(galaxy_count, NameProvider.names().size())):
+		var entry = Dice.name(i)
 		var galaxy = {
 			"name": entry.get("name", "Unnamed Galaxy"),
 			"slug": entry.get("slug", "unnamed"),
-			"star_system_count": randi_range(MinSystem, max_system_count)
+			"star_system_count": Dice.range(MinSystem, max_system_count)
 		}
 		galaxies.append(galaxy)
 
-	# JSON dosyasını yazdır
 	var json_text = JSON.stringify(galaxies, "\t")
-	var out_file = FileAccess.open(NameProvider.OUTPUT_PATH, FileAccess.WRITE)
-	# kullanıcı dizinine kaydet
+	var out_file = FileAccess.open(OUTPUT_PATH, FileAccess.WRITE)
 	out_file.store_string(json_text)
 	out_file.close()
 
@@ -88,7 +88,7 @@ func generate_galaxy():
 ## 
 ## @param galaxy: {Dictionary}
 ## 
-func generate_star_system(galaxy: Dictionary):
+func generate_starsystem(galaxy: Dictionary):
 	var system_dir_path = "user://" + STARSYSTEM_DIRNAME
 	var dir = DirAccess.open("user://")
 	if dir and not dir.dir_exists(STARSYSTEM_DIRNAME):
@@ -105,8 +105,8 @@ func generate_star_system(galaxy: Dictionary):
 	for i in range(star_count):
 		var system_name
 		var system_slug
-		var star_name = NameProvider.randomName()
-		var suffix = NameProvider.randomSuffix()
+		var star_name = Dice.name()
+		var suffix = Dice.suffix()
 		
 		if suffix:
 			system_name = "%s %s" % [star_name.name, suffix]
@@ -118,34 +118,63 @@ func generate_star_system(galaxy: Dictionary):
 		var star_data = {
 			"name": system_name,
 			"slug": system_slug,
-			"planet_count": randi_range(MinPlanet, max_planet_count),
-			"asteroid_count": randi_range(MinAsteroid, max_asteroid_count)
+			"planet_count": Dice.range(MinPlanet, max_planet_count),
+			"asteroid_count": Dice.range(MinAsteroid, max_asteroid_count)
 		}
 		
 		star_systems.append(star_data)
-
-	# JSON dosyasını yazdır
+		
 	var get_systems = JSON.stringify(star_systems, "\t")
 	var system_file = FileAccess.open(system_dir_path+"/"+galaxy_slug+".json", FileAccess.WRITE)
-	# kullanıcı dizinine kaydet
 	system_file.store_string(get_systems)
 	system_file.close()
 
 	print_rich("[color=green]%s galaksisi için %d adet yıldız sistemi üretildi.[/color]" % [galaxy_slug, star_count])
 
 ## 
+## @param star_system: {Dictionary}
+## 
+func generate_planet(starsystem_slug: String, planet_count: int):	
+	for i in range(planet_count):
+		var planet_name
+		var planet_slug
+		var get_name = Dice.name()
+		var get_suffix = Dice.suffix()
+		
+		if get_suffix:
+			planet_name = "%s %s" % [get_name.name, get_suffix]
+			planet_slug = "%s_%s" % [get_name.slug, get_suffix.to_lower()]
+		else:
+			planet_name = "%s" % [get_name.name]
+			planet_slug = "%s" % [get_name.slug]
+		
+		var planet_data = {
+			"name": planet_name,
+			"slug": planet_slug,
+			"star_system": starsystem_slug,
+			"atmosphere": Dice.draw(AtmosphereResource.Type),
+			"resources": Dice.draw(Ore.List, Dice.range(0, 4)),
+			"water_presence": Dice.flip(),
+			"ice_presence": Dice.flip(),
+			"day_length": Dice.range(MinDayLenght, MaxDayLenght),
+			"year_length": Dice.range(MinYearLenght, MaxYearLenght),
+			"moons_count": Dice.range(MinMoon, MaxMoon)
+		}
+		
+		planets.append(planet_data)
+		print(planet_data)
+		_generate_moon(planet_data)
+
+## 
 ## TODO
 ## 
-func generate_planet():
+func _generate_moon(planet: Dictionary):
 	pass
 
 ## 
-## oyunun başlangıcında galaksiler
-## oluşturulduktan sonra çalışır
+## 
 ## 
 func _generate_first_starsystem():
-	# daha önce oluşturulmuş yıldız sistemleri dosyası veya dosyaları
-	# varsa temizleyelim. beyaz bir sayfa açıyoruz.
 	var system_dir = "user://" + STARSYSTEM_DIRNAME
 	DirUtil.clearDirectory(system_dir)
 	
@@ -156,21 +185,17 @@ func _generate_first_starsystem():
 
 	var first_galaxy = galaxies[0]
 	print("İlk galaksi seçildi:", first_galaxy.name)
-	generate_star_system(first_galaxy)
+	generate_starsystem(first_galaxy)
 
-## 
-## Daha önce oluşturulmuş galaksi listesini
-## yükleme işlemi
 ## 
 ## @return Array
 ## 
 func _load_generated_galaxies() -> Array:
-	var file_path = NameProvider.OUTPUT_PATH
-	if not FileAccess.file_exists(file_path):
-		push_error("Galaksi dosyası yok: " + file_path)
+	if not FileAccess.file_exists(OUTPUT_PATH):
+		push_error("Galaksi dosyası yok: " + OUTPUT_PATH)
 		return []
 
-	var f = FileAccess.open(file_path, FileAccess.READ)
+	var f = FileAccess.open(OUTPUT_PATH, FileAccess.READ)
 	if f == null:
 		push_error("Galaksi dosyası açılamadı.")
 		return []
