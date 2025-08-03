@@ -68,7 +68,7 @@ func _ready():
 func generate_galaxy():
 	var galaxy_count = Dice.range(MinGalaxy, max_galaxy_count)
 
-	for i in range(min(galaxy_count, NameProvider.names().size())):
+	for i in range(min(galaxy_count, NamePool.take().size())):
 		var entry = Dice.name(i)
 		var galaxy = {
 			"name": entry.get("name", "Unnamed Galaxy"),
@@ -78,7 +78,7 @@ func generate_galaxy():
 		galaxies.append(galaxy)
 
 	var json_text = JSON.stringify(galaxies, "\t")
-	var out_file = FileAccess.open(OUTPUT_PATH, FileAccess.WRITE)
+	var out_file = FileBox.write(OUTPUT_PATH)
 	out_file.store_string(json_text)
 	out_file.close()
 
@@ -90,10 +90,10 @@ func generate_galaxy():
 ## 
 func generate_starsystem(galaxy: Dictionary):
 	var system_dir_path = "user://" + STARSYSTEM_DIRNAME
-	var dir = DirAccess.open("user://")
-	if dir and not dir.dir_exists(STARSYSTEM_DIRNAME):
-		var make_dir = dir.make_dir(STARSYSTEM_DIRNAME)
-		if make_dir == OK:
+	var directory = DirAccess.open("user://")
+	if directory and not directory.dir_exists(STARSYSTEM_DIRNAME):
+		var create_directory = directory.make_dir(STARSYSTEM_DIRNAME)
+		if create_directory == OK:
 			print_rich("[color=green]%s klasörü başarıyla oluşturuldu.[/color]" % [STARSYSTEM_DIRNAME])
 		else:
 			push_error(STARSYSTEM_DIRNAME + " klasörü oluşturulamadı.")
@@ -125,14 +125,15 @@ func generate_starsystem(galaxy: Dictionary):
 		star_systems.append(star_data)
 		
 	var get_systems = JSON.stringify(star_systems, "\t")
-	var system_file = FileAccess.open(system_dir_path+"/"+galaxy_slug+".json", FileAccess.WRITE)
+	var system_file = FileBox.write(system_dir_path+"/"+galaxy_slug+".json")
 	system_file.store_string(get_systems)
 	system_file.close()
 
 	print_rich("[color=green]%s galaksisi için %d adet yıldız sistemi üretildi.[/color]" % [galaxy_slug, star_count])
 
 ## 
-## @param star_system: {Dictionary}
+## @param starsystem_slug: String
+## @param planet_count: int
 ## 
 func generate_planet(starsystem_slug: String, planet_count: int):	
 	for i in range(planet_count):
@@ -154,6 +155,7 @@ func generate_planet(starsystem_slug: String, planet_count: int):
 			"star_system": starsystem_slug,
 			"atmosphere": Dice.draw(AtmosphereResource.Type),
 			"resources": Dice.draw(Ore.List, Dice.range(0, 4)),
+			"plants": Dice.draw(Plant.Type, Dice.range(0,5)),
 			"water_presence": Dice.flip(),
 			"ice_presence": Dice.flip(),
 			"day_length": Dice.range(MinDayLenght, MaxDayLenght),
@@ -176,7 +178,7 @@ func _generate_moon(planet: Dictionary):
 ## 
 func _generate_first_starsystem():
 	var system_dir = "user://" + STARSYSTEM_DIRNAME
-	DirUtil.clearDirectory(system_dir)
+	FileBox.clear(system_dir)
 	
 	var galaxies = _load_generated_galaxies()
 	if galaxies == null or galaxies.is_empty():
@@ -191,17 +193,17 @@ func _generate_first_starsystem():
 ## @return Array
 ## 
 func _load_generated_galaxies() -> Array:
-	if not FileAccess.file_exists(OUTPUT_PATH):
+	if not FileBox.has(OUTPUT_PATH):
 		push_error("Galaksi dosyası yok: " + OUTPUT_PATH)
 		return []
 
-	var f = FileAccess.open(OUTPUT_PATH, FileAccess.READ)
-	if f == null:
+	var file = FileBox.read(OUTPUT_PATH)
+	if file == null:
 		push_error("Galaksi dosyası açılamadı.")
 		return []
 
-	var json_text = f.get_as_text()
-	f.close()
+	var json_text = file.get_as_text()
+	file.close()
 
 	var parsed = JSON.parse_string(json_text)
 	if parsed == null or not parsed is Array:

@@ -1,12 +1,13 @@
 ##
 ##
 ##
-class_name Dice extends Node
+class_name Dice extends Utilities
 
 ## 
 ## rastgele true/false
 ## değerini dönderir.
 ## 
+## @example Dice.flip()
 ## @return bool
 ## 
 static func flip() -> bool:
@@ -17,6 +18,7 @@ static func flip() -> bool:
 ## "tek" bir pozitif tam sayı dönderir.
 ## 
 ## @param max: int
+## @example Dice.roll(6)
 ## @return int
 ## 
 static func roll(max: int) -> int:
@@ -27,6 +29,7 @@ static func roll(max: int) -> int:
 ## sayısı kadar rastgele veriyi dönderir
 ## 
 ## @param list: Dictionary
+## @example Dice.draw(Ore.List, 2)
 ## @param count: int
 ## 
 static func draw(list: Dictionary, count: int = 1):
@@ -48,19 +51,21 @@ static func draw(list: Dictionary, count: int = 1):
 ## 
 ## @param min: int
 ## @param max: int
+## @example Dice.range(0, 4)
 ## @return int
 ## 
 static func range(min: int, max: int) -> int:
 	return randi_range(min, max)
 
 ## 
-## NameProvider.names() listesinden
+## isim listesinden
 ## "number" sayısı kadar veri dönderir
 ## 
+## @example Dice.name()
 ## @param number: int|null
 ## 
 static func name(number = null):
-	var name_list = NameProvider.names()
+	var name_list = NamePool.take()
 	name_list.shuffle()
 	
 	if number:
@@ -69,9 +74,10 @@ static func name(number = null):
 	return name_list[randi_range(1, name_list.size())]
 
 ## 
-## NameProvider.Suffixes listesinden
+## NamePool.Suffixes listesinden
 ## rastgele bir değer dönderir
 ## 
+## @example Dice.suffix()
 ## @return String
 ## 
 static func suffix() -> String:
@@ -80,6 +86,6 @@ static func suffix() -> String:
 	var use_suffix = randf() < 0.6
 	
 	if use_suffix:
-		return draw(NameProvider.Suffixes)
+		return draw(NamePool.Suffixes)
 	
 	return ""

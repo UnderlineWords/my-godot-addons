@@ -1,7 +1,7 @@
-##
-##
-##
-class_name NameProvider extends Node
+## 
+## 
+## 
+class_name NamePool extends Utilities
 
 ## isim listesi
 const INPUT_PATH := "res://addons/ResourceManager/Resource/Universe/Names.json"
@@ -45,8 +45,8 @@ enum Suffixes {
 ## 
 ## 
 ## 
-static func names():
-	var file = FileAccess.open(INPUT_PATH, FileAccess.READ)
+static func take():
+	var file = File.read(INPUT_PATH)
 	
 	if not file:
 		push_error("İsim dosyası açılamadı.")
