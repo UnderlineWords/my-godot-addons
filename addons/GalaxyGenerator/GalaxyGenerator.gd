@@ -155,7 +155,7 @@ func generate_planet(starsystem_slug: String, planet_count: int):
 			"star_system": starsystem_slug,
 			"atmosphere": Dice.draw(AtmosphereResource.Type),
 			"resources": Dice.draw(Ore.List, Dice.range(0, 4)),
-			"plants": Dice.draw(Plant.Type, Dice.range(0,5)),
+			#"plants": Dice.draw(Plant.Type, Dice.range(0,5)), # TODO
 			"water_presence": Dice.flip(),
 			"ice_presence": Dice.flip(),
 			"day_length": Dice.range(MinDayLenght, MaxDayLenght),

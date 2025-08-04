@@ -46,7 +46,7 @@ enum Suffixes {
 ## 
 ## 
 static func take():
-	var file = File.read(INPUT_PATH)
+	var file = FileBox.read(INPUT_PATH)
 	
 	if not file:
 		push_error("İsim dosyası açılamadı.")
