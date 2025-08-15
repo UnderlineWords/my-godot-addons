@@ -1,13 +1,14 @@
 ##
-##
+## @class Dice
 ##
 class_name Dice extends Utilities
-
+	
 ## 
 ## rastgele true/false
 ## değerini dönderir.
 ## 
 ## @example Dice.flip()
+## 
 ## @return bool
 ## 
 static func flip() -> bool:
@@ -19,20 +20,21 @@ static func flip() -> bool:
 ## 
 ## @param max: int
 ## @example Dice.roll(6)
+## 
 ## @return int
 ## 
 static func roll(max: int) -> int:
 	return randi() % max + 1
 
 ## 
-## gönderilen listeden "count"
+## gönderilen dictionary listesinden "count"
 ## sayısı kadar rastgele veriyi dönderir
 ## 
 ## @param list: Dictionary
-## @example Dice.draw(Ore.List, 2)
 ## @param count: int
+## @example Dice.draw(Ore.List, 2)
 ## 
-static func draw(list: Dictionary, count: int = 1):
+static func fromDictionary(list: Dictionary, count: int = 1):
 	var keys = list.keys()
 	keys.shuffle()
 	
@@ -42,8 +44,25 @@ static func draw(list: Dictionary, count: int = 1):
 	else:
 		return keys.slice(0, count)
 
+##
+## gönderilen array listesinden "count"
+## sayısı kadar rastgele veriyi dönderir
 ## 
-## belirtilen min/max sayısı aralığı kadar
+## @param list: Array
+## @param count: int
+## @example Dice.pick(Arraylist, 2)
+## 
+## @return Array
+## 
+static func fromArray(list: Array, count: int) -> Array:
+	var shuffled_list := list.duplicate()
+	shuffled_list.shuffle()
+	
+	return shuffled_list.slice(0, count)
+
+
+## 
+## min ile max aralığı kadar
 ## rastgele bir sayı dönderir
 ## 
 ## NOT: bu metot Gdscript'in randi_range fonksiyonu
@@ -52,30 +71,15 @@ static func draw(list: Dictionary, count: int = 1):
 ## @param min: int
 ## @param max: int
 ## @example Dice.range(0, 4)
+## 
 ## @return int
 ## 
 static func range(min: int, max: int) -> int:
 	return randi_range(min, max)
-
-## 
-## isim listesinden
-## "number" sayısı kadar veri dönderir
-## 
-## @example Dice.name()
-## @param number: int|null
-## 
-static func name(number = null):
-	var name_list = NamePool.take()
-	name_list.shuffle()
 	
-	if number:
-		return name_list[number] 
-	
-	return name_list[randi_range(1, name_list.size())]
-
 ## 
-## NamePool.Suffixes listesinden
-## rastgele bir değer dönderir
+## NameGenerator.Suffixes listesinden
+## rastgele bir sonek dönderir
 ## 
 ## @example Dice.suffix()
 ## @return String
@@ -86,6 +90,6 @@ static func suffix() -> String:
 	var use_suffix = randf() < 0.6
 	
 	if use_suffix:
-		return draw(NamePool.Suffixes)
+		return Dice.fromDictionary(NameGenerator.Suffixes)
 	
 	return ""

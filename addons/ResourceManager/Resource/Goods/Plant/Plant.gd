@@ -1,9 +1,11 @@
 ## 
-## Plant
+## @class Plant
 ## Oyunda yer alan şifalı bitkiler, sebzeler 
 ## ve meyveler için ortak veri girdileri
 ## 
 class_name Plant extends Goods
+
+const PlantList := "res://addons/ResourceManager/Resource/Goods/Plant/Plants.json"
 
 enum Type {
 	HERB, 
@@ -38,3 +40,15 @@ enum Type {
 ## IS TOXIC?
 ## zehirli mi?
 @export var is_toxic: bool = false
+
+## 
+## @param filter
+## @param order_by
+## @example Plant.getList({"type": "herb"})
+## 
+## @return Array
+## 
+static func getList(filter = {}, order_by = "slug") -> Array:
+	var plant_list = JsonKit.loadAndFilter(PlantList, filter)
+	
+	return JsonKit.values(plant_list, order_by)

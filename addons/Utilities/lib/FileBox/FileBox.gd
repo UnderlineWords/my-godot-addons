@@ -1,5 +1,5 @@
 ##
-##
+## @class FileBox
 ##
 class_name FileBox extends Utilities
 
@@ -11,6 +11,7 @@ static func read(file_path: String):
 	
 ## 
 ## @param file_path: String
+## 
 ## @return bool
 ## 
 static func has(file_path: String) -> bool:
@@ -21,6 +22,21 @@ static func has(file_path: String) -> bool:
 ##
 static func write(file_path: String):
 	return FileAccess.open(file_path, FileAccess.WRITE)
+
+## 
+## @param String path
+## @param String directory_name
+## 
+static func makeDir(path: String, directory_name: String):
+	var directory = DirAccess.open(path)
+	if directory and not directory.dir_exists(directory_name):
+		var directory_created = directory.make_dir(directory_name)
+		if directory_created != OK:
+			push_error(directory_name + " klasörü oluşturulamadı.")
+			return
+	else:
+		print_rich(path+" dizini içinde daha önce "+directory_name+" isimli klasör oluşturulduğu için es geçildi.")
+		return
 
 ## 
 ## @param file_path: String
@@ -36,12 +52,20 @@ static func clear(path: String):
 		var file_name = dir.get_next()
 		if file_name == "":
 			break
-		if dir.current_is_dir():
-			continue  # alt klasörleri es geçiyoruz
+		if file_name == "." or file_name == "..":
+			continue
 		var file_path = path + "/" + file_name
-		var result = dir.remove(file_path)
-		if result != OK:
-			push_error("Silinemedi: " + file_path)
+		
+		if dir.current_is_dir():
+			# Alt dizini de aynı şekilde temizle
+			FileBox.clear(file_path)
+			# Boş olan dizini kaldır
+			if dir.remove(file_path) != OK:
+				push_error("Klasör silinemedi: " + file_path)
+		else:
+			# Dosyayı sil
+			if dir.remove(file_path) != OK:
+				push_error("Dosya silinemedi: " + file_path)
 	
-	print_rich("[color=green]"+path+" klasöründeki tüm dosyalar başarıyla silindi.[/color]")
+	#print_rich("[color=green]"+path+" klasöründeki tüm dosyalar başarıyla silindi.[/color]")
 	dir.list_dir_end()
