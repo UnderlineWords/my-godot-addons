@@ -1,7 +1,7 @@
 ## 
 ## @class JsonKit
 ## 
-class_name JsonKit extends Node
+class_name JsonKit extends Utilities
 
 ## 
 ## Belirtilen dizinden JSON dosyasını yükler

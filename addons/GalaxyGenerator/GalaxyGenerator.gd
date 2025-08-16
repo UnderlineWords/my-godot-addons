@@ -19,16 +19,15 @@ const MaxAsteroid: int = 3
 const MinMoon: int = 0
 const MaxMoon: int = 4
 
-## bir gezegenin toplam gün uzunluğu (saat)
+## bir gezegenin/uydunun toplam gün uzunluğu (saat)
 ## dünyaya göre ±%20'lik sapma
 const MinDayLenght: int = 19
 const MaxDayLenght: int = 29
-## bir gezegenin toplam yıl uzunluğu (gün)
+## bir gezegenin/uydunun toplam yıl uzunluğu (gün)
 ## dünyaya göre ±%20'lik sapma
 const MinYearLenght: int = 292
 const MaxYearLenght: int = 438
 
-##
 ## @link https://docs.godotengine.org/en/latest/tutorials/io/data_paths.html#accessing-persistent-user-data-user
 ## oluşturulan Galaxies.json
 ## dosyasının kaydedileceği dizin adı
@@ -134,6 +133,7 @@ func _generate_first_starsystem():
 func generate_starsystem(galaxy: Dictionary):		
 	var galaxy_slug = galaxy.get("slug", "unnamed")
 	var star_count = galaxy.get("star_system_count", 1)
+	var file_path = GALAXY_PATH+"/"+galaxy_slug
 	for i in range(star_count):
 		var system_name
 		var system_slug
@@ -158,18 +158,26 @@ func generate_starsystem(galaxy: Dictionary):
 	var get_systems = JSON.stringify(star_systems, "\t")
 	var first_starsystem = star_systems[0]
 	
-	# ilk yıldız sistemi için gezegenleri oluştur
-	print_rich("[color=green]%s galaksisi için %d adet yıldız sistemi üretildi.[/color]" % [galaxy_slug, star_count])
+	# ilk yıldız sistemi için gezegenleri ve asteroit kuşakları oluştur
+	print_rich("[color=green]%s galaksisi için, %d adet yıldız sistemi üretildi.[/color]" % [galaxy_slug, star_count])
 	print("listeden seçilen ilk yıldız sistemi: ", first_starsystem.name)
-	generate_planet(first_starsystem)
-	print_rich("[color=green]%s yıldız sistemi için %d adet gezegen oluşturuldu.[/color]" % [first_starsystem.name, first_starsystem.planet_count])
-
+	
+	# yıldız sistemine ait gezegenlerin oluşturulması
+	if first_starsystem.planet_count > 0:
+		generate_planet(first_starsystem)
+		print_rich("[color=green]%s yıldız sistemi için, %d adet gezegen oluşturuldu.[/color]" % [first_starsystem.name, first_starsystem.planet_count])
+	
+	# yıldız sistemine ait asteroit kuşakların oluşturulması
+	if first_starsystem.asteroid_count > 0:
+		generate_asteroid(first_starsystem, file_path)
+		print_rich("[color=green]%s yıldız sistemi için, %d adet asteroit kuşağı oluşturuldu.[/color]" % [first_starsystem.name, first_starsystem.asteroid_count])
+	
 	# oluşturulan tüm yıldız sistemlerini 
 	# starsystems.json dosyasına kaydet
-	var system_file = FileBox.write(GALAXY_PATH+"/"+galaxy_slug+"/starsystems.json")
+	var system_file = FileBox.write(file_path+"/starsystems.json")
 	system_file.store_string(get_systems)
 	system_file.close()
-
+	
 ## 
 ## bir yıldız sistemine ait
 ## tüm gezegenleri oluşturmak için
@@ -177,7 +185,12 @@ func generate_starsystem(galaxy: Dictionary):
 ## 
 ## @param starsystem
 ## 
-func generate_planet(starsystem):
+func generate_planet(starsystem: Dictionary):
+	# yıldız sistemi için klasör oluştur
+	var file_path = GALAXY_PATH+"/"+starsystem.galaxy+"/"+starsystem.slug
+	var planet_file = file_path+"/planets.json"
+	FileBox.makeDir(GALAXY_PATH+"/"+starsystem.galaxy, starsystem.slug)
+	
 	# "planet_count" sayısınca gezegen oluştur
 	for i in range(starsystem.planet_count):
 		var planet_name
@@ -203,31 +216,93 @@ func generate_planet(starsystem):
 			"ice_presence": Dice.flip(),
 			"day_length": Dice.range(MinDayLenght, MaxDayLenght),
 			"year_length": Dice.range(MinYearLenght, MaxYearLenght),
-			"moons_count": Dice.range(MinMoon, MaxMoon)
+			"moon_count": Dice.range(MinMoon, MaxMoon)
 		}
 		
 		planets.append(planet_data)
-		_generate_moon(planet_data.slug, planet_data.moons_count)
+		# gezegene ait uyduları oluştur
+		_generate_moon(planet_data, file_path)
 	
 	var get_planets = JSON.stringify(planets, "\t")
-	# yıldız sistemi için klasör oluştur
-	FileBox.makeDir(GALAXY_PATH+"/"+starsystem.galaxy, starsystem.slug)
-	var planet_file = FileBox.write(GALAXY_PATH+"/"+starsystem.galaxy+"/"+starsystem.slug+"/planets.json")
-	planet_file.store_string(get_planets)
-	planet_file.close()
+	var planet_json = FileBox.write(planet_file)
+	planet_json.store_string(get_planets)
+	planet_json.close()
 
 ## 
-## TODO
+## @param starsystem: Dictionary
+## @paran path: String
 ## 
-func _generate_moon(planet_slug: String, moon_count: int):
-	pass
+func generate_asteroid(starsystem: Dictionary, path: String):
+	# asteroit kayıtları için json dosyası
+	var asteroid_file = FileBox.write(path+"/"+starsystem.slug+"/asteroids.json")
 	
-## 
-## TODO
-## 
-func generate_asteroid(starsystem_slug: String, asteroid_count: int):
-	pass
+	# "asteroid_count" sayısınca asteroit kuşağı oluştur
+	for i in range(starsystem.asteroid_count):
+		var asteroid_name
+		var asteroid_slug
+		var get_name = NameGenerator.unique()
+		var get_suffix = Dice.suffix()
+		
+		if get_suffix:
+			asteroid_name = "%s %s" % [get_name, get_suffix]
+			asteroid_slug = "%s_%s" % [get_name.to_lower(), get_suffix.to_lower()]
+		else:
+			asteroid_name = "%s" % [get_name]
+			asteroid_slug = "%s" % [get_name.to_lower()]
+		
+		var asteroid_data = {
+			"name": asteroid_name,
+			"slug": asteroid_slug,
+			"star_system": starsystem.slug,
+			"resources": Dice.fromArray(Ore.getList(), Dice.range(0, 4)),
+			"water_presence": Dice.flip(),
+			"ice_presence": Dice.flip()
+		}
+		
+		asteroids.append(asteroid_data)
+	
+	var get_asteroids = JSON.stringify(asteroids, "\t")
+	# asteroit kuşaklarına ait dosyayı kaydet
+	asteroid_file.store_string(get_asteroids)
+	asteroid_file.close()
 
+## 
+## @param planet: Dictionary
+## @paran path: String
+## 
+func _generate_moon(planet: Dictionary, path: String):
+	# "moon_count" sayısınca uydu oluştur
+	for i in range(planet.moon_count):
+		var moon_name
+		var moon_slug
+		var get_name = NameGenerator.unique()
+		var get_suffix = Dice.suffix()
+		
+		if get_suffix:
+			moon_name = "%s %s" % [get_name, get_suffix]
+			moon_slug = "%s_%s" % [get_name.to_lower(), get_suffix.to_lower()]
+		else:
+			moon_name = "%s" % [get_name]
+			moon_slug = "%s" % [get_name.to_lower()]
+		
+		var moon_data = {
+			"name": moon_name,
+			"slug": moon_slug,
+			"planet": planet.slug,
+			"resources": Dice.fromArray(Ore.getList(), Dice.range(0, 4)),
+			"water_presence": Dice.flip(),
+			"ice_presence": Dice.flip(),
+			"day_length": Dice.range(MinDayLenght, MaxDayLenght),
+			"year_length": Dice.range(MinYearLenght, MaxYearLenght)
+		}
+		moons.append(moon_data)
+
+	var get_moons = JSON.stringify(moons, "\t")
+	# uydulara ait dosyayı kaydet
+	var moon_file = FileBox.write(path+"/moons.json")
+	moon_file.store_string(get_moons)
+	moon_file.close()
+	
 ## 
 ## daha önce oluşturulmuş galaksilere
 ## ait json dosyasını array olarak dönderir
