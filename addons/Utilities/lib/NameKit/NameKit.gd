@@ -1,11 +1,11 @@
 ## 
-## @class NameGenerator
+## @class NameKit
 ## Rastgele ve kurallı isim üretimi yapan yardımcı sınıf.
 ##
 ## Harf tipleri, geçiş kuralları ve uzunluk limitlerine göre rastgele isimler üretir.
 ## İsimler havuz sistemi ile saklanır, böylece tekrar etmeden benzersiz isimler alınabilir.
 ##
-class_name NameGenerator extends Utilities
+class_name NameKit extends Utilities
 
 ## Üretilecek isimlerin minimum uzunluğu.
 const MIN_LENGTH = 4
@@ -48,7 +48,7 @@ static var random_number := RandomNumberGenerator.new()
 ## Önceden üretilmiş ve henüz kullanılmamış isim havuzu.
 static var available_names: Array = []
 
-## sonekler
+## genel sonekler
 enum Suffixes {
 	# Roma rakamları
 	I, II, III, IV, V, VI, VII, VIII, IX, X, XI, XII, XIII, XIV, 
@@ -66,6 +66,71 @@ enum Suffixes {
 	Major, Minor, Supra, Infra, Zenith, Apex, Horizon, Obsidian, Nova
 }
 
+## uzay istasyonları için tipik sonekler
+enum StationSuffixes {
+	Station, Spacedock,	Habitat, Citadel, Outpost, Hub,
+	Colony, Arcology, Platform, Stronghold, Command, Relay,
+	Depot, Sanctuary, Haven
+}
+
+## POI (Point of Interest) lokasyon sonekleri
+enum PoiSuffixes {
+	Base, Complex, Vault, Lab, Observatory, Archive,
+	Nexus, Crypt, Wreck, Derelict, Ruins, Monolith, Temple,
+	Shrine, Forge, Mine, Refinery, Outlands, Frontier, Facility
+}
+
+## 
+## Havuzdan benzersiz bir isim döndürür, 
+## yoksa yeni isimler üretir.
+## 
+## @example NameKit.unique()
+## 
+## @return String|void
+## 
+static func unique() -> String:
+	NameKit._init_pool(Dice.roll(100))
+	
+	if available_names.is_empty():
+		push_error("Tüm isimler kullanıldı!")
+		return ""
+		
+	var idx := random_number.randi_range(0, available_names.size() - 1)
+	var name: String = available_names[idx]
+	available_names.remove_at(idx)
+	
+	return name
+
+## 
+## Suffixes listesinden
+## rastgele bir sonek dönderir
+## 
+## @example NameKit.suffix()
+## @return String
+## 
+static func suffix() -> String:
+	# her zaman suffix kullanılmasın
+	# yüzde 60 oranında olasılık olsun
+	var use_suffix = randf() < 0.6
+	
+	if use_suffix:
+		return Dice.fromDictionary(NameKit.Suffixes)
+	
+	return ""
+
+## 
+## rastgele isim ve soyisim oluşturma.
+## özellikle karakter oluşturma (NPC veya değil)
+## sırasında kullanılabilir.
+## 
+## @example NameKit.fullname()
+## 
+## @return String
+## 
+static func fullname() -> String:
+	return NameKit.unique() + " " + NameKit.unique()
+
+
 ## 
 ## İsim havuzunu belirtilen sayıda isimle doldurur (eğer boşsa).
 ## 
@@ -73,10 +138,10 @@ enum Suffixes {
 ## 
 ## @return void
 ## 
-static func init_pool(count: int) -> void:
+static func _init_pool(count: int) -> void:
 	if available_names.is_empty():
 		for i in range(count):
-			available_names.append(generate_raw())
+			available_names.append(NameKit._generate_raw())
 
 ## 
 ## Belirtilen uzunluk aralığında tek bir rastgele isim üretir.
@@ -86,7 +151,7 @@ static func init_pool(count: int) -> void:
 ## 
 ## @return String : Üretilen isim (ilk harfi büyük).
 ## 
-static func generate_raw(min_length: int = MIN_LENGTH, max_length: int = MAX_LENGTH) -> String:
+static func _generate_raw(min_length: int = MIN_LENGTH, max_length: int = MAX_LENGTH) -> String:
 	if random_number.seed == 0:
 		random_number.randomize()
 
@@ -96,7 +161,7 @@ static func generate_raw(min_length: int = MIN_LENGTH, max_length: int = MAX_LEN
 	var state := "INITIAL"
 
 	while index < length:
-		var obj := get_letter(state, length - index)
+		var obj := NameKit._get_letter(state, length - index)
 		state = obj[0]
 		var letter: String = obj[1]
 		name += letter
@@ -113,7 +178,7 @@ static func generate_raw(min_length: int = MIN_LENGTH, max_length: int = MAX_LEN
 ## 
 ## @return Array: [state, letter]
 ## 
-static func get_letter(state: String, remaining_length: int) -> Array:
+static func _get_letter(state: String, remaining_length: int) -> Array:
 	var transitions: Array = TRANSITION[state].duplicate()
 
 	if remaining_length < 3:
@@ -129,22 +194,3 @@ static func get_letter(state: String, remaining_length: int) -> Array:
 	var letter: String = letters_list[random_number.randi_range(0, letters_list.size() - 1)]
 
 	return [state, letter]
-
-## 
-## Havuzdan benzersiz bir isim döndürür, 
-## yoksa yeni isimler üretir.
-## 
-## @return String|void
-## 
-static func unique() -> String:
-	init_pool(Dice.roll(100))
-	
-	if available_names.is_empty():
-		push_error("Tüm isimler kullanıldı!")
-		return ""
-		
-	var idx := random_number.randi_range(0, available_names.size() - 1)
-	var name: String = available_names[idx]
-	available_names.remove_at(idx)
-	
-	return name

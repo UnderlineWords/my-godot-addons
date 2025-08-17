@@ -1,7 +1,7 @@
 ##
-## @class FileBox
+## @class FileKit
 ##
-class_name FileBox extends Utilities
+class_name FileKit extends Utilities
 
 ## 
 ## @param file_path: String
@@ -58,7 +58,7 @@ static func clear(path: String):
 		
 		if dir.current_is_dir():
 			# Alt dizini de aynı şekilde temizle
-			FileBox.clear(file_path)
+			FileKit.clear(file_path)
 			# Boş olan dizini kaldır
 			if dir.remove(file_path) != OK:
 				push_error("Klasör silinemedi: " + file_path)

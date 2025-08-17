@@ -14,11 +14,11 @@ class_name JsonKit extends Utilities
 ## @return Array
 ## 
 static func load(file_path: String) -> Array:
-	if not FileBox.has(file_path):
+	if not FileKit.has(file_path):
 		push_error("Dosya bulunamadı: %s" % file_path)
 		return []
 
-	var file = FileBox.read(file_path)
+	var file = FileKit.read(file_path)
 	if file == null:
 		push_error("Dosya açılamıyor: %s" % file_path)
 		return []

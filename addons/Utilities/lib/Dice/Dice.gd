@@ -76,20 +76,3 @@ static func fromArray(list: Array, count: int) -> Array:
 ## 
 static func range(min: int, max: int) -> int:
 	return randi_range(min, max)
-	
-## 
-## NameGenerator.Suffixes listesinden
-## rastgele bir sonek dönderir
-## 
-## @example Dice.suffix()
-## @return String
-## 
-static func suffix() -> String:
-	# her zaman suffix kullanılmasın
-	# yüzde 60 oranında olasılık olsun
-	var use_suffix = randf() < 0.6
-	
-	if use_suffix:
-		return Dice.fromDictionary(NameGenerator.Suffixes)
-	
-	return ""

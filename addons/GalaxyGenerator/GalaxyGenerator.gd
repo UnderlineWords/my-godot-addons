@@ -65,9 +65,9 @@ var asteroids = []
 func _ready():
 	randomize()
 	# varsa önceki dizin ve alt dizinleri sil
-	FileBox.clear(GALAXY_PATH)
+	FileKit.clear(GALAXY_PATH)
 	# galaksiler için yeni dizini oluştur
-	FileBox.makeDir("user://", GALAXY_DIRNAME)
+	FileKit.makeDir("user://", GALAXY_DIRNAME)
 	# galaksileri oluştur
 	generate_galaxy()
 	
@@ -81,7 +81,7 @@ func generate_galaxy():
 	var galaxy_count = Dice.range(MinGalaxy, max_galaxy_count)
 
 	for i in galaxy_count:
-		var galaxy_name = NameGenerator.unique()
+		var galaxy_name = NameKit.unique()
 		var galaxy_slug = galaxy_name.to_lower()
 		var galaxy = {
 			"name": galaxy_name,
@@ -90,10 +90,10 @@ func generate_galaxy():
 		}
 		galaxies.append(galaxy)
 		# galaksilere ait dizinleri oluştur
-		FileBox.makeDir(GALAXY_PATH, galaxy_slug)
+		FileKit.makeDir(GALAXY_PATH, galaxy_slug)
 
 	var json_text = JSON.stringify(galaxies, "\t")
-	var out_file = FileBox.write(OUTPUT_PATH)
+	var out_file = FileKit.write(OUTPUT_PATH)
 	out_file.store_string(json_text)
 	out_file.close()
 
@@ -137,8 +137,8 @@ func generate_starsystem(galaxy: Dictionary):
 	for i in range(star_count):
 		var system_name
 		var system_slug
-		var star_name = NameGenerator.unique()
-		var suffix = Dice.suffix()
+		var star_name = NameKit.unique()
+		var suffix = NameKit.suffix()
 		if suffix:
 			system_name = "%s %s" % [star_name, suffix]
 			system_slug = "%s_%s" % [star_name.to_lower(), suffix.to_lower()]
@@ -174,7 +174,7 @@ func generate_starsystem(galaxy: Dictionary):
 	
 	# oluşturulan tüm yıldız sistemlerini 
 	# starsystems.json dosyasına kaydet
-	var system_file = FileBox.write(file_path+"/starsystems.json")
+	var system_file = FileKit.write(file_path+"/starsystems.json")
 	system_file.store_string(get_systems)
 	system_file.close()
 	
@@ -189,14 +189,14 @@ func generate_planet(starsystem: Dictionary):
 	# yıldız sistemi için klasör oluştur
 	var file_path = GALAXY_PATH+"/"+starsystem.galaxy+"/"+starsystem.slug
 	var planet_file = file_path+"/planets.json"
-	FileBox.makeDir(GALAXY_PATH+"/"+starsystem.galaxy, starsystem.slug)
+	FileKit.makeDir(GALAXY_PATH+"/"+starsystem.galaxy, starsystem.slug)
 	
 	# "planet_count" sayısınca gezegen oluştur
 	for i in range(starsystem.planet_count):
 		var planet_name
 		var planet_slug
-		var get_name = NameGenerator.unique()
-		var get_suffix = Dice.suffix()
+		var get_name = NameKit.unique()
+		var get_suffix = NameKit.suffix()
 		
 		if get_suffix:
 			planet_name = "%s %s" % [get_name, get_suffix]
@@ -224,7 +224,7 @@ func generate_planet(starsystem: Dictionary):
 		_generate_moon(planet_data, file_path)
 	
 	var get_planets = JSON.stringify(planets, "\t")
-	var planet_json = FileBox.write(planet_file)
+	var planet_json = FileKit.write(planet_file)
 	planet_json.store_string(get_planets)
 	planet_json.close()
 
@@ -234,14 +234,14 @@ func generate_planet(starsystem: Dictionary):
 ## 
 func generate_asteroid(starsystem: Dictionary, path: String):
 	# asteroit kayıtları için json dosyası
-	var asteroid_file = FileBox.write(path+"/"+starsystem.slug+"/asteroids.json")
+	var asteroid_file = FileKit.write(path+"/"+starsystem.slug+"/asteroids.json")
 	
 	# "asteroid_count" sayısınca asteroit kuşağı oluştur
 	for i in range(starsystem.asteroid_count):
 		var asteroid_name
 		var asteroid_slug
-		var get_name = NameGenerator.unique()
-		var get_suffix = Dice.suffix()
+		var get_name = NameKit.unique()
+		var get_suffix = NameKit.suffix()
 		
 		if get_suffix:
 			asteroid_name = "%s %s" % [get_name, get_suffix]
@@ -275,8 +275,8 @@ func _generate_moon(planet: Dictionary, path: String):
 	for i in range(planet.moon_count):
 		var moon_name
 		var moon_slug
-		var get_name = NameGenerator.unique()
-		var get_suffix = Dice.suffix()
+		var get_name = NameKit.unique()
+		var get_suffix = NameKit.suffix()
 		
 		if get_suffix:
 			moon_name = "%s %s" % [get_name, get_suffix]
@@ -299,7 +299,7 @@ func _generate_moon(planet: Dictionary, path: String):
 
 	var get_moons = JSON.stringify(moons, "\t")
 	# uydulara ait dosyayı kaydet
-	var moon_file = FileBox.write(path+"/moons.json")
+	var moon_file = FileKit.write(path+"/moons.json")
 	moon_file.store_string(get_moons)
 	moon_file.close()
 	
@@ -310,11 +310,11 @@ func _generate_moon(planet: Dictionary, path: String):
 ## @return Array
 ## 
 func _load_generated_galaxies() -> Array:
-	if not FileBox.has(OUTPUT_PATH):
+	if not FileKit.has(OUTPUT_PATH):
 		push_error("Galaksi dosyası yok: " + OUTPUT_PATH)
 		return []
 
-	var file = FileBox.read(OUTPUT_PATH)
+	var file = FileKit.read(OUTPUT_PATH)
 	if file == null:
 		push_error("Galaksi dosyası açılamadı.")
 		return []
