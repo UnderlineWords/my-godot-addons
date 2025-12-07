@@ -16,7 +16,3 @@ class_name Cave extends UndergroundLocation
 ## ORES
 ## mağarada yer alan madenler
 @export var ores:Array[Ore.List] = []
-
-## TYPE
-## mağarada yer alan bitki türleri
-@export var plants:Array[Plant.Type] = []

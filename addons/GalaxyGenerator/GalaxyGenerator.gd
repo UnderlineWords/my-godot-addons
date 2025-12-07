@@ -6,13 +6,13 @@ class_name GalaxyGenerator extends Node
 ## oyundaki minimum ve maksimum galaksi sayısı
 const MinGalaxy: int = 7
 const MaxGalaxy: int = 25
-## galaksi içindeki minimum ve maksimum yıldız sistemi sayısı
+## bir galaksi içindeki minimum ve maksimum yıldız sistemi sayısı
 const MinSystem: int = 10
 const MaxSystem: int = 50
-## yıldız sistemi içindeki minimum ve maksimum gezegen sayısı
+## bir yıldız sistemi içindeki minimum ve maksimum gezegen sayısı
 const MinPlanet: int = 3
 const MaxPlanet: int = 20
-## yıldız sistemi içindeki minimum ve maksimum asteroit kuşak sayısı
+## bir yıldız sistemi içindeki minimum ve maksimum asteroit kuşak sayısı
 const MinAsteroid: int = 0
 const MaxAsteroid: int = 3
 ## bir gezegene ait minimum ve maksimum ay/uydu sayısı

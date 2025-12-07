@@ -80,6 +80,13 @@ enum PoiSuffixes {
 	Shrine, Forge, Mine, Refinery, Outlands, Frontier, Facility
 }
 
+## Üretici firmalar için tipik sonekler
+enum ManufacturerSuffixes {
+	Core, Corp,	Tech, Dynamics, Industries, Systems,
+	Forge, Assembly, Collective, Consortium, Syndicate,
+	Conglomerate, Union, Alliance, Combine, Guild, Order
+}
+
 ## 
 ## Havuzdan benzersiz bir isim döndürür, 
 ## yoksa yeni isimler üretir.
