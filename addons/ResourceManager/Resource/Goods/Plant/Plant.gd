@@ -5,6 +5,52 @@
 ## 
 class_name Plant extends Goods
 
+## varsayılan bitki listesi (json dosyasındaki slug)
+enum List {
+	acidfern,
+	arctic_vine,
+	ashthorn,
+	blightroot,
+	blizzardroot,
+	bogthorn,
+	chokevine,
+	cindervine,
+	cryofern,
+	daggerleaf,
+	dune_bloom,
+	dustbloom,
+	embergrass,
+	frostbloom,
+	fumegrass,
+	glacier_thistle,
+	gloamfruit,
+	glowcap,
+	gravepetal,
+	hexroot,
+	icespine,
+	icicle_bloom,
+	leechleaf,
+	luminleaf,
+	lurkmoss,
+	nightshade_orchid,
+	noxbloom,
+	pyraflora,
+	radshroom,
+	rootmaw,
+	scorchvine,
+	slickmoss,
+	slumberweed,
+	spinepetal,
+	starcap_mushroom,
+	sulfur_lily,
+	swampbell,
+	veilgrass,
+	venomfruit,
+	venomweed,
+	voidbark
+}
+
+## bitki detayları
 const PlantList := "res://addons/ResourceManager/Resource/Goods/Plant/Plants.json"
 
 enum Type {
